@@ -12,8 +12,6 @@
   background-color: $black;
 }
 
-/*이미지 스프라이트*/
-
 .imgtest2 {
   @extend .imgSprite;
   width: 222px;
