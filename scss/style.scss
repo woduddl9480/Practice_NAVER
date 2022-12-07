@@ -1,3 +1,5 @@
+@import "../scss/_variable.scss";
+
 .test {
     margin: 0 auto;
 }
@@ -6,4 +8,5 @@
 }
 .test3 {
     margin-top: 10px;
+    background-color: $black;
 }
