@@ -32,3 +32,25 @@
   height: 52px;
   background-position: 0 -158px;
 }
+
+/*헤더*/
+.wrap {
+  overflow: hidden;
+  min-width: 1190px;
+}
+
+.header {
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #e4e8eb;
+  z-index: 2000;
+  &-top {
+    width: 1130px;
+    height: 160px;
+    margin: 0 auto;
+    padding: 0 30px;
+    .main {
+      height: 100%;
+    }
+  }
+}
