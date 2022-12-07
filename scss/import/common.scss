@@ -76,9 +76,9 @@
 
 /* width 단위 */
 .wd {
-    @for $i from 1 to 81 {
-        &-#{$i*5} {
-            width: $i * 5px !important;
+    @for $i from 1 to 200 {
+        &-#{$i*2} {
+            width: $i * 2px !important;
         }
     }
 }
