@@ -1,4 +1,4 @@
-@import "../scss/import/_variable.scss";
+@import "../import/variable";
 
 /* 마진 단위 */
 .m {
@@ -83,4 +83,13 @@
       width: $i * 2px !important;
     }
   }
+}
+
+.imgSprite {
+  display: inline-block;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  content: "";
+  background-image: url($imgPath + "sp_main.png");
+  background-size: 442px 428px;
 }

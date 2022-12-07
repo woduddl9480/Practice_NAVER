@@ -1,4 +1,4 @@
-@import "../scss/import/_variable.scss";
+@import "../scss/import/variable";
 @import "../scss/import/common.scss";
 
 .test {
@@ -13,14 +13,6 @@
 }
 
 /*이미지 스프라이트*/
-.imgSprite {
-  display: inline-block;
-  background-repeat: no-repeat;
-  vertical-align: top;
-  content: "";
-  background-image: url($imgPath + "sp_main.png");
-  background-size: 442px 428px;
-}
 
 .imgtest2 {
   @extend .imgSprite;
@@ -30,6 +22,13 @@
 }
 
 .imgtest3 {
+  @extend .imgSprite;
+  width: 222px;
+  height: 52px;
+  background-position: 0 -158px;
+}
+
+.imgtest4 {
   @extend .imgSprite;
   width: 222px;
   height: 52px;
