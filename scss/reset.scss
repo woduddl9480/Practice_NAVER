@@ -22,8 +22,8 @@ td,
 textarea,
 th,
 ul {
-    margin: 0;
-    padding: 0
+  margin: 0;
+  padding: 0;
 }
 
 body,
@@ -32,10 +32,11 @@ input,
 select,
 table,
 textarea {
-    font-size: 12px;
-    line-height: 16px;
-    color: #202020;
-    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif
+  font-size: 12px;
+  line-height: 16px;
+  color: #202020;
+  font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",
+    helvetica, "Apple SD Gothic Neo", sans-serif;
 }
 
 h1,
@@ -44,70 +45,70 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: inherit;
-    line-height: inherit
+  font-size: inherit;
+  line-height: inherit;
 }
 
 textarea {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    background-color: transparent;
-    border: 0;
-    word-break: keep-all;
-    word-wrap: break-word
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: transparent;
+  border: 0;
+  word-break: keep-all;
+  word-wrap: break-word;
 }
 
 button,
 input {
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    border: 0
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 0;
 }
 
 button {
-    background-color: transparent
+  background-color: transparent;
 }
 
 fieldset,
 img {
-    border: 0
+  border: 0;
 }
 
 img {
-    vertical-align: top
+  vertical-align: top;
 }
 
 ol,
 ul {
-    list-style: none
+  list-style: none;
 }
 
 address,
 em {
-    font-style: normal
+  font-style: normal;
 }
 
 a {
-    color: inherit;
-    text-decoration: none
+  color: inherit;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline
+  text-decoration: underline;
 }
 
 iframe {
-    overflow: hidden;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    vertical-align: top
+  overflow: hidden;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  vertical-align: top;
 }
 
 mark {
-    background-color: transparent
+  background-color: transparent;
 }
 
 i {
-    font-style: normal
+  font-style: normal;
 }
