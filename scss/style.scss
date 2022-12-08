@@ -1,36 +1,21 @@
-@import "../scss/import/variable";
-@import "../scss/import/common.scss";
+@import '../scss/import/variable';
+@import '../scss/import/common.scss';
 
-.test {
-  margin: 0 auto;
-}
-.test2 {
-  margin-top: 10px;
-}
-.test3 {
-  margin-top: 10px;
-  background-color: $black;
-}
+// .test {
+//   margin: 0 auto;
+// }
+// .test2 {
+//   margin-top: 10px;
+// }
+// .test3 {
+//   margin-top: 10px;
+//   background-color: $black;
+// }
 
-.imgtest2 {
-  @extend .imgSprite;
-  width: 222px;
-  height: 52px;
-  background-position: 0 -158px;
-}
-
-.imgtest3 {
-  @extend .imgSprite;
-  width: 222px;
-  height: 52px;
-  background-position: 0 -158px;
-}
-
-.imgtest4 {
-  @extend .imgSprite;
-  width: 222px;
-  height: 52px;
-  background-position: 0 -158px;
+/*이미지 스프라이트*/
+.imgSprite {
+  background-image: url($imgPath + 'sp_main.png');
+  background-size: 442px 428px;
 }
 
 /*헤더*/
@@ -51,6 +36,18 @@
     padding: 0 30px;
     .main {
       height: 100%;
+      .logo {
+        display: block;
+        &-naver {
+          @extend .imgSprite;
+          display: inline-block;
+          background-repeat: no-repeat;
+          vertical-align: top;
+          width: 222px;
+          height: 52px;
+          background-position: 0 -158px;
+        }
+      }
     }
   }
 }
