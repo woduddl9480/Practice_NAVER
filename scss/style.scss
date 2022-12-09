@@ -8,13 +8,6 @@
   overflow: hidden;
   min-width: 1190px;
 }
-.test1 {
-  margin: 0 auto;
-}
-.test {
-  margin-top: 10px;
-}
-
 .header {
   position: relative;
   background-color: #fff;
@@ -30,7 +23,7 @@
       .logo {
         display: block;
         &-naver {
-          @extend .imgSprite;
+          @extend .sprMain;
           display: inline-block;
           background-repeat: no-repeat;
           vertical-align: top;
@@ -39,6 +32,8 @@
           background-position: 0 -158px;
         }
       }
+    }
+    .search {
     }
   }
 }
