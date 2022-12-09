@@ -1,0 +1,7 @@
+@import "../modules/variable";
+
+/*이미지 스프라이트*/
+.imgSprite {
+  background-image: url($imgPath + "sp_main.png");
+  background-size: 442px 428px;
+}

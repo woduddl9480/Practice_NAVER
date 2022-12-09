@@ -1,27 +1,18 @@
-@import '../scss/import/variable';
-@import '../scss/import/common.scss';
-
-// .test {
-//   margin: 0 auto;
-// }
-// .test2 {
-//   margin-top: 10px;
-// }
-// .test3 {
-//   margin-top: 10px;
-//   background-color: $black;
-// }
-
-/*이미지 스프라이트*/
-.imgSprite {
-  background-image: url($imgPath + 'sp_main.png');
-  background-size: 442px 428px;
-}
+@import "./modules/variable";
+@import "./modules/common.scss";
+@import "./modules/icon.scss";
+@import "./modules/spr.scss";
 
 /*헤더*/
 .wrap {
   overflow: hidden;
   min-width: 1190px;
+}
+.test1 {
+  margin: 0 auto;
+}
+.test {
+  margin-top: 10px;
 }
 
 .header {
