@@ -17,32 +17,42 @@
     width: 1130px;
     height: 160px;
     margin: 0 auto;
-    padding: 0 30px;
-    .main {
-      height: 100%;
-      .logo {
-        display: block;
-        &-naver {
-          @extend .sprMain;
-          display: inline-block;
-          background-repeat: no-repeat;
-          vertical-align: top;
-          width: 222px;
-          height: 52px;
-          background-position: 0 -158px;
+    padding: 10px 30px;
+    &__flex {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 50px 0;
+      .main {
+        height: 100%;
+        .logo {
+          display: block;
+          &-naver {
+            @extend .sprMain;
+            display: inline-block;
+            background-repeat: no-repeat;
+            vertical-align: top;
+            width: 222px;
+            height: 52px;
+            background-position: 0 -158px;
+          }
+        }
+      }
+      .search {
+        position: relative;
+        &-box {
+          position: absolute;
+          input {
+          }
+        }
+        &-btn {
+          position: absolute;
         }
       }
     }
-    .search {
-      position: relative;
-      &-box {
-        position: absolute;
-        input {
-        }
-      }
-      &-btn {
-        position: absolute;
-      }
+    .service {
+      display: flex;
+      justify-content: flex-end;
     }
   }
 }
