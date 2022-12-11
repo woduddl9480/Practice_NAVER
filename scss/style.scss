@@ -22,7 +22,7 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      padding: 50px 0;
+      padding: 10px 0 20px;
       .main {
         height: 100%;
         .logo {
@@ -53,6 +53,64 @@
     .service {
       display: flex;
       justify-content: flex-end;
+      align-items: center;
+      .setlink {
+        font-size: 11px;
+        &::after {
+          @extend .sprMain;
+          content: "";
+          display: inline-block;
+          width: 26px;
+          height: 26px;
+          background-position: -382px -213px;
+          vertical-align: top;
+          content: "";
+          margin: -3px 0 0 3px;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .jrnaver {
+        margin-right: 10px;
+        & .ico-jrnaver {
+          display: inline-block;
+          margin-top: 2px;
+        }
+        &:hover {
+          text-decoration: none !important;
+        }
+        &:hover .ico-jrnaver {
+          @extend .sprMain;
+          width: 60px;
+          height: 10px;
+          background-position: -326px -296px !important;
+        }
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 1px;
+          height: 10px;
+          margin: 3px 7px;
+          background-color: #e4e8eb;
+        }
+      }
+      .happybean {
+        display: inline-block;
+        & .ico-happybean {
+          display: inline-block;
+          vertical-align: text-top;
+        }
+        &:hover {
+          text-decoration: none !important;
+        }
+        &:hover .ico-happybean {
+          @extend .sprMain;
+          width: 34px;
+          height: 11px;
+          background-position: -380px -199px !important;
+        }
+      }
     }
   }
 }

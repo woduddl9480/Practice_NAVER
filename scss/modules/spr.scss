@@ -4,9 +4,12 @@
 .sprMain {
   background-image: url($imgPath + "sp_main.png");
   background-size: 442px 428px;
+  vertical-align: top;
+  background-repeat: no-repeat;
 }
 
 .sprWeather {
   background-image: url($imgPath + "sp_weather.png");
   background-size: 215px 184px;
+  background-repeat: no-repeat;
 }
