@@ -11,16 +11,15 @@
 .header {
   position: relative;
   background-color: #fff;
-  border-bottom: 1px solid #e4e8eb;
   z-index: 2000;
   &-top {
     width: 1130px;
-    height: 160px;
+    height: 140px;
     margin: 0 auto;
     padding: 10px 30px;
     .main {
-      align-items: center;
-      padding: 10px 0 20px;
+      align-items: initial;
+      padding: 19px 0 20px;
       .logo {
         height: 100%;
         &-area {
@@ -28,7 +27,6 @@
           .naver {
             @extend .sprMain;
             display: inline-block;
-            background-repeat: no-repeat;
             vertical-align: top;
             width: 222px;
             height: 52px;
@@ -37,7 +35,38 @@
         }
       }
       .search {
-        position: relative;
+        fieldset {
+          .search-box {
+            justify-content: space-between;
+            width: 582px;
+            height: 52px;
+            margin-left: 15px;
+            border: 2px solid $green;
+            border-radius: 2px;
+            &__input {
+              input {
+                width: 444px;
+                height: 24px;
+                padding: 13px 15px;
+                margin: 1px;
+                background-color: $white;
+                line-height: 24px;
+                color: $black;
+                font-weight: 700;
+                font-size: 18px;
+                outline: 0;
+              }
+            }
+            &__btn {
+              width: 56px;
+              height: 52px;
+              background-color: $green;
+              border-radius: 0 2px 2px 0;
+              cursor: pointer;
+              align-items: center;
+            }
+          }
+        }
         &-box {
           position: absolute;
         }
@@ -52,6 +81,7 @@
       align-items: center;
       .setlink {
         font-size: 11px;
+        line-height: 17px;
         &::after {
           @extend .sprMain;
           content: "";
@@ -105,6 +135,25 @@
           width: 34px;
           height: 11px;
           background-position: -380px -199px !important;
+        }
+      }
+    }
+  }
+  &-btm {
+    width: 100%;
+    border-top: 1px solid #e4e8eb;
+    border-bottom: 1px solid #e4e8eb;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+    .gnb {
+      width: 1130px;
+      margin: 0 auto;
+      justify-content: space-between;
+      &-list {
+        padding: 11px 11px;
+      }
+      &-weather {
+        align-items: center;
+        .air {
         }
       }
     }

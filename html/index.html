@@ -28,7 +28,7 @@
               <i class="ico-happybean"></i>
             </a>
           </div>
-          <div class="main flex-start">
+          <div class="main flex flex-start">
             <div class="logo">
               <div class="logo-area">
                 <a href="#" class="naver">
@@ -39,30 +39,37 @@
             <div class="search">
               <form action="">
                 <fieldset>
-                  <legend class="sound-only">검색</legend>
-                  <div class="search-box">
-                    <input type="text" class="srch-area" />
+                  <div class="search-box flex">
+                    <legend class="sound-only">검색</legend>
+                    <div class="search-box__input">
+                      <input type="text" class="input-green" />
+                    </div>
+                    <button
+                      type="button"
+                      class="search-box__btn flex flex-center"
+                    >
+                      <span class="ico-search"></span>
+                    </button>
                   </div>
-                  <button type="button" class="search-btn"></button>
                 </fieldset>
               </form>
               <!-- 한글입력기 -->
-              <div>
+              <!-- <div>
                 <div>
                   <button class="keyboard"></button>
                 </div>
-              </div>
+              </div> -->
               <!-- 자동완성 -->
-              <div>
+              <!-- <div>
                 <button class="autocomplete"></button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
         <div class="header-btm">
-          <div class="gnb">
-            <div class="gnb-list">
-              <ul class="">
+          <div class="gnb flex">
+            <div class="gnb-list flex">
+              <ul class="flex">
                 <li class="item">
                   <a href="">메일</a>
                 </li>
@@ -114,8 +121,8 @@
               </ul>
               <a href="">더보기</a>
             </div>
-            <div class="gnb-weather">
-              <ul class="air">
+            <div class="gnb-weather flex">
+              <ul class="air flex">
                 <li class="air-fine">
                   <span class="light">미세</span>
                   <span class="bold">좋음</span>
@@ -128,13 +135,13 @@
                   <span class="light">영등포동</span>
                 </li>
               </ul>
-              <ul class="temp">
+              <!-- <ul class="temp">
                 <li class="temp-current"></li>
                 <li class="temp-degree"></li>
                 <li class="place">
                   <span class="light">영등포동</span>
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>

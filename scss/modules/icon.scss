@@ -14,3 +14,10 @@
   height: 11px;
   background-position: -365px -245px;
 }
+.ico-search {
+  @extend .sprMain;
+  vertical-align: text-top;
+  width: 22px;
+  height: 22px;
+  background-position: -420px -24px;
+}
