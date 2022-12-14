@@ -21,3 +21,32 @@
   height: 22px;
   background-position: -420px -24px;
 }
+.ico-mail {
+  @extend .sprMain;
+  vertical-align: text-top;
+  width: 21px;
+  height: 21px;
+  background-position: -420px -73px;
+}
+.ico-shop {
+  @extend .sprMain;
+  vertical-align: text-top;
+  width: 24px;
+  height: 15px;
+  background-position: -76px -389px;
+}
+.ico-shoplive {
+  @extend .sprMain;
+  vertical-align: text-top;
+  width: 54px;
+  height: 18px;
+  background-position: -209px -269px;
+}
+.ico-tv {
+  @extend .sprMain;
+  vertical-align: text-top;
+  width: 12px;
+  height: 14px;
+  background-position: -256px -212px;
+  margin-top: 6px;
+}

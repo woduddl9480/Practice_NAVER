@@ -94,6 +94,10 @@
   overflow: hidden;
 }
 
+.txt-green {
+  color: #03c75a !important;
+}
+
 .flex {
   display: flex;
   &-start {
@@ -105,8 +109,7 @@
   &-center {
     justify-content: center;
   }
-}
-
-.test {
-  margin: 10px;
+  &-align {
+    align-items: center;
+  }
 }

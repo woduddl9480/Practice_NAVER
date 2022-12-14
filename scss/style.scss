@@ -7,155 +7,200 @@
 .wrap {
   overflow: hidden;
   min-width: 1190px;
-}
-.header {
-  position: relative;
-  background-color: #fff;
-  z-index: 2000;
-  &-top {
-    width: 1130px;
-    height: 140px;
-    margin: 0 auto;
-    padding: 10px 30px;
-    .main {
-      align-items: initial;
-      padding: 19px 0 20px;
-      .logo {
-        height: 100%;
-        &-area {
-          display: block;
-          .naver {
-            @extend .sprMain;
-            display: inline-block;
-            vertical-align: top;
-            width: 222px;
-            height: 52px;
-            background-position: 0 -158px;
+  .header {
+    position: relative;
+    background-color: #fff;
+    z-index: 2000;
+    &-top {
+      width: 1130px;
+      height: 140px;
+      margin: 0 auto;
+      padding: 10px 30px;
+      .main {
+        align-items: initial;
+        padding: 19px 0 20px;
+        .logo {
+          height: 100%;
+          &-area {
+            display: block;
+            .naver {
+              @extend .sprMain;
+              display: inline-block;
+              vertical-align: top;
+              width: 222px;
+              height: 52px;
+              background-position: 0 -158px;
+            }
+          }
+        }
+        .search {
+          fieldset {
+            .search-box {
+              justify-content: space-between;
+              width: 582px;
+              height: 52px;
+              margin-left: 15px;
+              border: 2px solid $green;
+              border-radius: 2px;
+              &__input {
+                input {
+                  width: 444px;
+                  height: 24px;
+                  padding: 13px 15px;
+                  margin: 1px;
+                  background-color: $white;
+                  line-height: 24px;
+                  color: $black;
+                  font-weight: 700;
+                  font-size: 18px;
+                  outline: 0;
+                }
+              }
+              &__btn {
+                width: 56px;
+                height: 51.5px;
+                background-color: $green;
+                cursor: pointer;
+                align-items: center;
+              }
+            }
+          }
+          &-box {
+            position: absolute;
+          }
+          &-btn {
+            position: absolute;
           }
         }
       }
-      .search {
-        fieldset {
-          .search-box {
-            justify-content: space-between;
-            width: 582px;
-            height: 52px;
-            margin-left: 15px;
-            border: 2px solid $green;
-            border-radius: 2px;
-            &__input {
-              input {
-                width: 444px;
-                height: 24px;
-                padding: 13px 15px;
-                margin: 1px;
-                background-color: $white;
-                line-height: 24px;
-                color: $black;
-                font-weight: 700;
-                font-size: 18px;
-                outline: 0;
-              }
-            }
-            &__btn {
-              width: 56px;
-              height: 52px;
-              background-color: $green;
-              border-radius: 0 2px 2px 0;
-              cursor: pointer;
-              align-items: center;
-            }
+      .service {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .setlink {
+          font-size: 11px;
+          line-height: 17px;
+          &::after {
+            @extend .sprMain;
+            content: "";
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            background-position: -382px -213px;
+            vertical-align: top;
+            content: "";
+            margin: -3px 0 0 3px;
+          }
+          &:hover {
+            text-decoration: underline;
           }
         }
-        &-box {
-          position: absolute;
+        .jrnaver {
+          margin-right: 10px;
+          & .ico-jrnaver {
+            display: inline-block;
+            margin-top: 2px;
+          }
+          &:hover {
+            text-decoration: none !important;
+          }
+          &:hover .ico-jrnaver {
+            @extend .sprMain;
+            width: 60px;
+            height: 10px;
+            background-position: -326px -296px !important;
+          }
+          &:before {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            margin: 3px 7px;
+            background-color: #e4e8eb;
+          }
         }
-        &-btn {
-          position: absolute;
+        .happybean {
+          display: inline-block;
+          & .ico-happybean {
+            display: inline-block;
+            vertical-align: text-top;
+          }
+          &:hover {
+            text-decoration: none !important;
+          }
+          &:hover .ico-happybean {
+            @extend .sprMain;
+            width: 34px;
+            height: 11px;
+            background-position: -380px -199px !important;
+          }
         }
       }
     }
-    .service {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      .setlink {
-        font-size: 11px;
-        line-height: 17px;
-        &::after {
-          @extend .sprMain;
-          content: "";
-          display: inline-block;
-          width: 26px;
-          height: 26px;
-          background-position: -382px -213px;
-          vertical-align: top;
-          content: "";
-          margin: -3px 0 0 3px;
+    &-btm {
+      width: 100%;
+      border-top: 1px solid #e4e8eb;
+      border-bottom: 1px solid #e4e8eb;
+      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+      .gnb {
+        width: 1130px;
+        margin: 0 auto;
+        justify-content: space-between;
+        &-list {
+          padding: 11px 11px;
+          .item {
+            margin-right: 11.5px;
+            span {
+              font-size: 15px;
+              line-height: 30px;
+              font-weight: 700;
+              letter-spacing: -0.3px;
+            }
+            a {
+              vertical-align: middle;
+              i {
+                display: inline-block;
+              }
+            }
+          }
+          .item a:hover {
+            text-decoration: none;
+          }
+          .btn-more {
+            a {
+              span {
+                margin-left: 5px;
+                line-height: 30px;
+                color: #202020;
+                text-align: right;
+              }
+              span:after {
+                content: "";
+                display: inline-block;
+                @extend .sprMain;
+                width: 11px;
+                height: 7px;
+                background-position: -402px -296px;
+                margin-top: 11px;
+                margin-left: 8px;
+              }
+            }
+          }
         }
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-      .jrnaver {
-        margin-right: 10px;
-        & .ico-jrnaver {
-          display: inline-block;
-          margin-top: 2px;
-        }
-        &:hover {
-          text-decoration: none !important;
-        }
-        &:hover .ico-jrnaver {
-          @extend .sprMain;
-          width: 60px;
-          height: 10px;
-          background-position: -326px -296px !important;
-        }
-        &:before {
-          content: "";
-          display: inline-block;
-          width: 1px;
-          height: 10px;
-          margin: 3px 7px;
-          background-color: #e4e8eb;
-        }
-      }
-      .happybean {
-        display: inline-block;
-        & .ico-happybean {
-          display: inline-block;
-          vertical-align: text-top;
-        }
-        &:hover {
-          text-decoration: none !important;
-        }
-        &:hover .ico-happybean {
-          @extend .sprMain;
-          width: 34px;
-          height: 11px;
-          background-position: -380px -199px !important;
+        &-weather {
+          align-items: center;
+          // .air {
+          // }
         }
       }
     }
   }
-  &-btm {
-    width: 100%;
-    border-top: 1px solid #e4e8eb;
-    border-bottom: 1px solid #e4e8eb;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
-    .gnb {
+  /*메인*/
+  .main {
+    &-wrap {
       width: 1130px;
+      padding: 20px 30px;
       margin: 0 auto;
-      justify-content: space-between;
-      &-list {
-        padding: 11px 11px;
-      }
-      &-weather {
-        align-items: center;
-        .air {
-        }
-      }
     }
   }
 }
