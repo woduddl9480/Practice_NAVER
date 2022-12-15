@@ -19,7 +19,7 @@
         &-area {
           display: block;
           .naver {
-            @extend .sprMain;
+            @extend .sprMain-top;
             display: inline-block;
             vertical-align: top;
             width: 222px;
@@ -76,7 +76,7 @@
         font-size: 11px;
         line-height: 17px;
         &::after {
-          @extend .sprMain;
+          @extend .sprMain-top;
           content: "";
           display: inline-block;
           width: 26px;
@@ -99,11 +99,13 @@
         &:hover {
           text-decoration: none !important;
         }
-        &:hover .ico-jrnaver {
-          @extend .sprMain;
-          width: 60px;
-          height: 10px;
-          background-position: -326px -296px !important;
+        &:hover {
+          .ico-jrnaver {
+            @extend .sprMain-top;
+            width: 60px;
+            height: 10px;
+            background-position: -326px -296px !important;
+          }
         }
         &:before {
           content: "";
@@ -123,11 +125,13 @@
         &:hover {
           text-decoration: none !important;
         }
-        &:hover .ico-happybean {
-          @extend .sprMain;
-          width: 34px;
-          height: 11px;
-          background-position: -380px -199px !important;
+        &:hover {
+          .ico-happybean {
+            @extend .sprMain-top;
+            width: 34px;
+            height: 11px;
+            background-position: -380px -199px !important;
+          }
         }
       }
     }
@@ -170,7 +174,7 @@
             span:after {
               content: "";
               display: inline-block;
-              @extend .sprMain;
+              @extend .sprMain-top;
               width: 11px;
               height: 7px;
               background-position: -402px -296px;
@@ -221,7 +225,7 @@
         .footer-title span:after {
           content: "";
           display: inline-block;
-          @extend .sprMain;
+          @extend .sprMain-top;
           width: 7px;
           height: 11px;
           background-position: -408px -110px;
