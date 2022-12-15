@@ -1,7 +1,6 @@
 @import "./modules/variable";
-@import "./modules/common.scss";
-@import "./modules/icon.scss";
-@import "./modules/spr.scss";
+@import "./modules/common";
+@import "./modules/spr";
 
 /*헤더*/
 
@@ -200,8 +199,7 @@
   &-conts {
     color: #777;
   }
-  &-title {
-  }
+
   background-color: #fafbfc;
   border-top: $border-footer;
   .wrap {
@@ -240,4 +238,7 @@
       padding-top: 25px;
     }
   }
+}
+.test {
+  margin-top: auto;
 }
