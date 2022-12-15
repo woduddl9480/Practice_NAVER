@@ -201,9 +201,18 @@
 /*푸터*/
 .footer {
   &-conts {
+    li {
+      display: block;
+      max-width: 600px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      color: #777;
+    }
+  }
+  &-txt {
     color: #777;
   }
-
   background-color: #fafbfc;
   border-top: $border-footer;
   .wrap {
@@ -235,11 +244,49 @@
       }
     }
     .service {
-      padding: 20px 0;
+      width: 100%;
+      padding: 10px 0;
       border-bottom: $border-footer;
+      &-left {
+        width: 70%;
+        &__box {
+          display: flex;
+          margin: 10px 0;
+          .footer-title {
+            width: 87px;
+          }
+          .footer-conts {
+            @extend .txt-bar;
+          }
+        }
+      }
+      &-right {
+        width: 30%;
+        margin: auto 0;
+        .link-box {
+          width: 50%;
+          &__txt {
+            padding-top: 3px;
+          }
+          &__img {
+            margin-left: 10px;
+            width: 48px;
+            height: 48px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
     }
     .info {
       padding-top: 25px;
+      ul {
+        @extend .txt-bar;
+      }
+      address {
+        margin-left: 15px;
+      }
     }
   }
 }

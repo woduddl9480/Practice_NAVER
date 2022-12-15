@@ -31,3 +31,20 @@
     align-items: center;
   }
 }
+.fw-700 {
+  font-weight: 700 !important;
+}
+.txt-bar {
+  display: flex;
+  li:after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background-color: $bg-gray;
+    margin: 0 8px;
+  }
+  li:last-child:after {
+    display: none;
+  }
+}
