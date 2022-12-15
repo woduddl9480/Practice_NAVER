@@ -217,9 +217,53 @@
   border-top: $border-footer;
   .wrap {
     padding: 0 30px 92px;
+    > div {
+      @extend .flex;
+    }
     .ad {
       padding: 24px 0;
       border-bottom: $border-footer;
+      justify-content: space-between;
+      &-list {
+        max-width: 350px;
+        height: 86px;
+        border: none;
+        &__cont {
+          .thumb {
+            width: 160px;
+            height: 86px;
+            margin-right: 10px;
+            img {
+              width: 100%;
+            }
+          }
+          .txt {
+            .subtitle {
+              em {
+                color: $txt-green;
+                @extend .fw-700;
+              }
+            }
+            .title {
+              margin-top: 6px;
+            }
+            .detail {
+              margin-top: 10px;
+              p {
+                line-height: 15px;
+              }
+            }
+          }
+        }
+        &__cont:hover {
+          text-decoration: none;
+          .txt {
+            strong {
+              text-decoration: underline !important;
+            }
+          }
+        }
+      }
     }
     .notice {
       padding: 16px 0 15px;
@@ -289,7 +333,4 @@
       }
     }
   }
-}
-.test {
-  margin-top: auto;
 }
