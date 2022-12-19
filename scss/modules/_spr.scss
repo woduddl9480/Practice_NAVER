@@ -7,19 +7,21 @@
   vertical-align: top;
   background-repeat: no-repeat;
 }
-
 .sprMain {
   background-image: url($imgPath + "sp_main.png");
   background-size: 442px 428px;
   background-repeat: no-repeat;
 }
-
 .sprWeather {
   background-image: url($imgPath + "sp_weather.png");
   background-size: 215px 184px;
   background-repeat: no-repeat;
 }
-
+.sprMy {
+  background-image: url($imgPath + "sp_my.png");
+  background-size: 307px 289px;
+  background-repeat: no-repeat;
+}
 /* 이미지 스프라이트 활용한 아이콘*/
 .ico-jrnaver {
   @extend .sprMain-top;

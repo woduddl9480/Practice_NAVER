@@ -187,19 +187,49 @@
       </div>
     </header>
     <!-- 메인 -->
-    <section class="main">
-      <div class="wrap">
-        <article class="slider-box">
-          <h1 class="sound-only">메인 슬라이더 영역</h1>
-          <div class="slider-box__main"></div>
-        </article>
-        <!-- <article class="slider-box__sub"></article> -->
-        <aside class="aside-box"></aside>
+
+    <div class="wrap wrap-main">
+      <div class="container flex">
+        <!-- 왼쪽 -->
+        <section class="container-left">
+          <div class="slider">
+            <div class="slider-main">asdf</div>
+          </div>
+          <!-- <article class="slider-box__sub"></article> -->
+        </section>
+        <!-- 오른쪽 -->
+        <aside class="container-right">
+          <!-- 사용자계정정보 -->
+          <div class="account">
+            <div class="account-user flex">
+              <a href="" class="profile">
+                <div class="profile-pic">
+                  <img
+                    src="../img/profileImage.png"
+                    alt="로그인 사용자 프로필 사진"
+                  />
+                  <span class="thumb-bd"></span>
+                </div>
+              </a>
+              <div class="info">
+                <div class="info-box flex">
+                  <a href="">
+                    <span>재영</span>
+                    님
+                  </a>
+                </div>
+              </div>
+              <a class="logout"></a>
+            </div>
+            <div class="account-menu"></div>
+          </div>
+        </aside>
       </div>
-    </section>
+    </div>
+
     <!-- 푸터 -->
     <footer class="footer">
-      <div class="wrap">
+      <div class="wrap wrap-footer">
         <div class="ad flex">
           <div class="ad-list">
             <a href="" class="ad-list__cont flex">

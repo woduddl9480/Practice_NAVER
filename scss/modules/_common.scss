@@ -12,6 +12,12 @@
 .wrap {
   width: 1130px;
   margin: 0 auto;
+  &-main {
+    padding: 20px 30px;
+  }
+  &-footer {
+    padding: 0 30px 92px;
+  }
 }
 .txt-green {
   color: #03c75a !important;
