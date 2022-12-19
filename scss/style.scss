@@ -244,6 +244,58 @@
             background-position: -50px -249px;
           }
         }
+        .info {
+          &-user {
+            font-size: 13px;
+            .nickname {
+              @extend .fw-700;
+              @extend .no-underline;
+              span {
+                margin-right: -5px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: inline-block;
+                max-width: 85px;
+                vertical-align: top;
+              }
+              &:after {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 12px;
+                margin: 0 7px 0 3px;
+                background-color: #dae1e6;
+                vertical-align: -1px;
+              }
+            }
+            .id {
+              font-size: 11px;
+              margin-right: 5px;
+            }
+            .secure {
+              i {
+                display: inline-block;
+              }
+            }
+            .secure:hover {
+              .ico-secure {
+                @extend .sprMy;
+                width: 9px;
+                height: 13px;
+                background-position: -273px -217px;
+              }
+            }
+          }
+          &-mail {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #808080;
+          }
+        }
+        .logout {
+        }
       }
     }
   }
