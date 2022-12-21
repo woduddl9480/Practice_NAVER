@@ -161,7 +161,7 @@
           }
         }
         .item a:hover {
-          text-decoration: none;
+          @extend .no-underline;
         }
         .btn-more {
           a {
@@ -208,6 +208,7 @@
       background-color: $bg-default;
       &-user {
         padding: 17px 17px 0;
+        position: relative;
         .profile {
           position: relative;
           margin-right: 16px;
@@ -247,6 +248,7 @@
         .info {
           &-user {
             font-size: 13px;
+            margin-bottom: 5px;
             .nickname {
               @extend .fw-700;
               @extend .no-underline;
@@ -287,14 +289,66 @@
               }
             }
           }
-          &-mail {
+          &-mymail {
+            margin-bottom: 4px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
             color: #808080;
           }
+          &-new {
+            a {
+              &.note:after {
+                content: "";
+                display: inline-block;
+                margin: 2px 9px 0 3px;
+                width: 1px;
+                height: 11px;
+                background-color: #dae1e6;
+                vertical-align: -1px;
+              }
+              &.nplus {
+                i {
+                  display: inline-block;
+                }
+                span {
+                  vertical-align: top;
+                }
+              }
+              &.nplus:after {
+                @extend .sprMy;
+                content: "";
+                display: inline-block;
+                margin: 0 2px 2px -2px;
+                width: 5px;
+                height: 8px;
+                background-position: -301px -72px;
+              }
+            }
+            a:first-child {
+              margin-right: 5px;
+            }
+            strong {
+              margin-left: 4px;
+              color: $green-main;
+            }
+          }
         }
         .logout {
+          position: absolute;
+          top: 17px;
+          right: 17px;
+          padding: 6px 10px 6px 11px;
+          background-color: #ccd0d4;
+          -webkit-border-radius: 14px;
+          border-radius: 14px;
+          font-size: 11px;
+          color: #fff;
+          cursor: pointer;
+          @extend .no-underline;
+        }
+        .logout:hover {
+          background-color: #b4b9bf;
         }
       }
     }
@@ -347,7 +401,7 @@
           .txt {
             .subtitle {
               em {
-                color: $txt-green;
+                color: $green-footer;
                 @extend .fw-700;
               }
             }
@@ -363,7 +417,7 @@
           }
         }
         &__cont:hover {
-          text-decoration: none;
+          @extend .no-underline;
           img {
             -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
