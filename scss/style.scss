@@ -203,9 +203,8 @@
     margin-right: 30px;
   }
   &-right {
-    width: 348px;
+    width: 350px;
     .account {
-      width: 100%;
       border: $border-default;
       background-color: $bg-default;
       &-user {
@@ -436,20 +435,23 @@
       }
     }
     .issue {
-      width: 100%;
       margin: 12px 0;
       border: $border-default;
       height: 47px;
       &-box {
         width: 100%;
+        height: 100%;
         .slide {
-          width: 281px;
+          width: 76%;
           padding: 15px 0 14px 16px;
           overflow: hidden;
           span {
             font-size: 13px;
             @extend .fw-700;
           }
+        }
+        .btn {
+          width: 24%;
         }
       }
     }
