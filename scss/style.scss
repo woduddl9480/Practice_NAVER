@@ -356,12 +356,12 @@
           cursor: pointer;
           &.prev {
             @extend .ico-prev;
-            top: 6px;
+            top: 5px;
             left: -20px;
           }
           &.next {
             @extend .ico-next;
-            top: 6px;
+            top: 5px;
             right: -20px;
           }
         }
@@ -409,6 +409,26 @@
               }
               &:last-child {
                 border-right: none;
+              }
+              .badge {
+                position: absolute;
+                text-align: center;
+                top: -10px;
+                left: 0;
+                right: 0;
+                &-green {
+                  @extend .fw-700;
+                  display: inline-block;
+                  min-width: 6px;
+                  height: 18px;
+                  padding: 0 6px;
+                  background-color: $badgeGreen;
+                  border-radius: 18px;
+                  font-size: 10px;
+                  line-height: 18px;
+                  color: $white;
+                  letter-spacing: 0;
+                }
               }
             }
           }
