@@ -65,6 +65,12 @@
   height: 14px;
   background-position: -256px -212px;
 }
+.ico-setting {
+  @extend .sprMy;
+  width: 23px;
+  height: 23px;
+  background-position: -50px -249px;
+}
 .ico-secure {
   @extend .sprMy;
   width: 9px;
