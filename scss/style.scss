@@ -285,14 +285,13 @@
               }
             }
             .mymail {
-              margin-bottom: 4px;
+              margin-top: 2px;
               overflow: hidden;
               text-overflow: ellipsis;
               white-space: nowrap;
               color: #808080;
             }
           }
-
           .logout {
             height: 15px;
             padding: 6px 10px 6px 11px;
@@ -345,6 +344,27 @@
             margin-left: 4px;
             color: $green-main;
           }
+        }
+      }
+      &-tab {
+        position: relative;
+        button {
+          position: absolute;
+          cursor: pointer;
+          &.prev {
+            @extend .ico-prev;
+            top: 0;
+            left: 0;
+          }
+          &.next {
+            @extend .ico-next;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        .tab-wrap {
+          height: 60px;
         }
       }
     }
