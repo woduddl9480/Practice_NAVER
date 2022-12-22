@@ -89,6 +89,12 @@
   height: 34px;
   background-position: -145px -37px;
 }
+.ico-prev {
+  @extend .sprMy;
+  width: 34px;
+  height: 34px;
+  background-position: -145px -37px;
+}
 .ico-next {
   @extend .sprMy;
   width: 34px;
