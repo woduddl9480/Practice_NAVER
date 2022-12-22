@@ -203,7 +203,7 @@
     margin-right: 30px;
   }
   &-right {
-    width: 350px;
+    width: 348px;
     .account {
       width: 100%;
       border: $border-default;
@@ -431,6 +431,24 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+    .issue {
+      width: 100%;
+      margin: 12px 0;
+      border: $border-default;
+      height: 47px;
+      &-box {
+        width: 100%;
+        .slide {
+          width: 281px;
+          padding: 15px 0 14px 16px;
+          overflow: hidden;
+          span {
+            font-size: 13px;
+            @extend .fw-700;
           }
         }
       }

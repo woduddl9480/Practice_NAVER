@@ -32,6 +32,7 @@ input,
 select,
 table,
 textarea {
+  box-sizing: border-box;
   font-size: 12px;
   line-height: 16px;
   color: #202020;
