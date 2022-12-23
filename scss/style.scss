@@ -437,8 +437,9 @@
     }
     .issue {
       margin: 12px 0;
-      border: $border-default;
       height: 47px;
+      border: $border-default;
+
       &-box {
         width: 100%;
         height: 100%;
@@ -446,13 +447,34 @@
           width: 76%;
           padding: 15px 0 14px 16px;
           overflow: hidden;
-          span {
+          strong {
             font-size: 13px;
-            @extend .fw-700;
+          }
+          &-link {
+            &__title {
+            }
+            &__content {
+              .country {
+              }
+              &:before {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 12px;
+                margin: 0px 4px 0px 6px;
+                background-color: $bg-gray;
+              }
+            }
+          }
+          &-link:hover {
+            @extend .no-underline;
           }
         }
-        .btn {
-          width: 24%;
+        &__btn {
+          .slide-prev {
+          }
+          .slide-next {
+          }
         }
       }
     }
@@ -547,15 +569,17 @@
         }
       }
       &-right {
-        .footer-title span:after {
-          content: "";
-          display: inline-block;
-          @extend .sprMain-top;
-          width: 7px;
-          height: 11px;
-          background-position: -408px -110px;
-          margin-left: 10px;
-          margin-top: 3px;
+        .footer-title {
+          span:after {
+            content: "";
+            display: inline-block;
+            @extend .sprMain-top;
+            width: 7px;
+            height: 11px;
+            background-position: -408px -110px;
+            margin-left: 10px;
+            margin-top: 3px;
+          }
         }
       }
     }

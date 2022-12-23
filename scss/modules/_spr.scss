@@ -89,15 +89,15 @@
   height: 34px;
   background-position: -145px -37px;
 }
-.ico-prev {
-  @extend .sprMy;
-  width: 34px;
-  height: 34px;
-  background-position: -145px -37px;
-}
 .ico-next {
   @extend .sprMy;
   width: 34px;
   height: 34px;
   background-position: -73px -37px;
+}
+.ico-slideprev {
+  @extend .sprMain-top;
+  width: 6px;
+  height: 9px;
+  background-position: -162px -327px;
 }
