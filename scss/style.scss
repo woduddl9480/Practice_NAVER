@@ -296,7 +296,7 @@
           .logout {
             height: 15px;
             padding: 6px 10px 6px 11px;
-            margin-left: 26px;
+            margin-left: 24px;
             background-color: #ccd0d4;
             -webkit-border-radius: 14px;
             border-radius: 14px;
@@ -401,6 +401,7 @@
               vertical-align: top;
               text-align: center;
               @extend .no-underline;
+              cursor: pointer;
               span {
                 font-size: 12px;
                 line-height: 16px;
