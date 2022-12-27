@@ -101,3 +101,27 @@
   height: 9px;
   background-position: -162px -327px;
 }
+.ico-usa {
+  @extend .sprMain;
+  width: 20px;
+  height: 20px;
+  background-position: -420px -118px;
+}
+.ico-arrowblue {
+  @extend .sprMain;
+  width: 9px;
+  height: 6px;
+  background-position: -433px -402px;
+}
+.ico-issue--prev {
+  @extend .sprMain;
+  width: 6px;
+  height: 9px;
+  background-position: -162px -327px;
+}
+.ico-issue--next {
+  @extend .sprMain;
+  width: 5px;
+  height: 9px;
+  background-position: -146px -327px;
+}

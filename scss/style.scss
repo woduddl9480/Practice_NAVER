@@ -452,17 +452,44 @@
           }
           &-link {
             &__title {
-            }
-            &__content {
-              .country {
-              }
-              &:before {
+              &:after {
                 content: "";
                 display: inline-block;
                 width: 1px;
                 height: 12px;
-                margin: 0px 4px 0px 6px;
+                margin: 0 7px;
                 background-color: $bg-gray;
+              }
+            }
+            &__content {
+              span {
+                font-size: 13px;
+                line-height: 16px;
+              }
+              .country {
+                margin-right: 6px;
+                .ico-usa {
+                  @extend .ico-usa;
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-right: 2px;
+                }
+              }
+              .now {
+                margin-right: 10px;
+                span {
+                  @extend .fw-700;
+                }
+              }
+              .rate {
+                .ico-arrowblue {
+                  @extend .ico-arrowblue;
+                  display: inline-block;
+                  margin-bottom: 1.5px;
+                }
+                span {
+                  color: #2586ee;
+                }
               }
             }
           }
@@ -471,9 +498,61 @@
           }
         }
         &__btn {
-          .slide-prev {
+          padding: 12px 11px;
+          button {
+            border: $border-gray;
+            background-color: $white;
+            cursor: pointer;
+            i {
+              margin: 6px 8px 4px;
+            }
+            &.slide-prev {
+              i {
+                @extend .ico-issue--prev;
+                display: inline-block;
+              }
+              i:hover {
+                @extend .sprMain;
+                width: 6px;
+                height: 9px;
+                background-position: -154px -327px;
+              }
+            }
+            &.slide-next {
+              margin-left: -1px;
+              i {
+                @extend .ico-issue--next;
+                display: inline-block;
+              }
+              i:hover {
+                @extend .sprMain;
+                width: 5px;
+                height: 9px;
+                background-position: -138px -327px;
+              }
+            }
           }
-          .slide-next {
+          button:hover {
+            background-color: $bg-default;
+            &.slide-prev {
+              i {
+                display: inline-block;
+                @extend .sprMain;
+                width: 6px;
+                height: 9px;
+                background-position: -154px -327px;
+              }
+            }
+            &.slide-next {
+              margin-left: -1px;
+              i {
+                display: inline-block;
+                @extend .sprMain;
+                width: 5px;
+                height: 9px;
+                background-position: -138px -327px;
+              }
+            }
           }
         }
       }
