@@ -557,6 +557,16 @@
         }
       }
     }
+    .adcolumn {
+      margin-bottom: 15px;
+      a {
+        img {
+          border: $border-default;
+          width: 350px;
+          height: 200px;
+        }
+      }
+    }
   }
 }
 
