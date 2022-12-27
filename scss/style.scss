@@ -204,6 +204,11 @@
   }
   &-right {
     width: 350px;
+    box-sizing: border-box;
+    > div {
+      box-sizing: border-box;
+      width: 100%;
+    }
     .account {
       border: $border-default;
       background-color: $bg-default;
@@ -559,10 +564,8 @@
     }
     .adcolumn {
       margin-bottom: 15px;
-      width: 350px;
       height: 200px;
       border: $border-default;
-      box-sizing: border-box;
       a {
         img {
           width: 100%;
