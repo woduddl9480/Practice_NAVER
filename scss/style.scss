@@ -190,8 +190,22 @@
       }
       &-weather {
         align-items: center;
-        // .air {
-        // }
+        .air {
+          &-list {
+            height: 52px;
+            .dust-fine {
+              &:after {
+                @extend .txt-bar2;
+                margin: 0 10px 0 8px;
+              }
+            }
+          }
+        }
+        .temp {
+          &-list {
+            height: 52px;
+          }
+        }
       }
     }
   }
@@ -269,7 +283,7 @@
                 width: 1px;
                 height: 12px;
                 margin: 0 7px 0 3px;
-                background-color: #dae1e6;
+                background-color: $bg-gray2;
                 vertical-align: -1px;
               }
             }
@@ -322,7 +336,7 @@
               margin: 2px 9px 0 3px;
               width: 1px;
               height: 11px;
-              background-color: #dae1e6;
+              background-color: $bg-gray2;
               vertical-align: -1px;
             }
             &.nplus {

@@ -54,6 +54,13 @@
     display: none;
   }
 }
+.txt-bar2 {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: $bg-gray;
+}
 .no-underline {
   text-decoration: none !important;
 }

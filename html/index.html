@@ -161,27 +161,37 @@
               </a>
             </div>
           </div>
-          <div class="gnb-weather flex">
-            <ul class="air flex">
-              <li class="air-fine">
-                <span class="light">미세</span>
-                <span class="bold">좋음</span>
-              </li>
-              <li class="air-super">
-                <span class="light">초미세</span>
-                <span class="bold">좋음</span>
-              </li>
-              <li class="place">
-                <span class="light">영등포동</span>
-              </li>
-            </ul>
-            <!-- <ul class="temp">
-                <li class="temp-current"></li>
-                <li class="temp-degree"></li>
-                <li class="place">
-                  <span class="light">영등포동</span>
-                </li>
-              </ul> -->
+          <div class="gnb-weather">
+            <!-- 미세먼지 -->
+            <div class="air">
+              <a href="">
+                <ul class="air-list flex flex-align">
+                  <li class="dust-fine">
+                    <span class="light">미세</span>
+                    <strong class="fine-status">좋음</strong>
+                  </li>
+                  <li class="dust-super">
+                    <span class="light">초미세</span>
+                    <strong class="super-status">좋음</strong>
+                  </li>
+                  <li class="place">
+                    <span class="light">영등포동</span>
+                  </li>
+                </ul>
+              </a>
+            </div>
+            <!-- 날씨 -->
+            <div class="temp" style="display: none">
+              <a href="">
+                <ul class="temp-list flex">
+                  <li class="temp-current"></li>
+                  <li class="temp-degree"></li>
+                  <li class="place">
+                    <span class="light">영등포동</span>
+                  </li>
+                </ul>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -302,6 +312,7 @@
                       <span>1,282.60</span>
                     </div>
                     <div class="rate">
+                      <span class="sound-only">하락</span>
                       <i class="ico-arrowblue"></i>
                       <span>0.40 -0.03%</span>
                     </div>
@@ -323,7 +334,7 @@
           <div class="adcolumn">
             <a href="">
               <img
-                src="../img/naver_membership.jpg"
+                src="../img/vitamin.jpg"
                 alt="네이버 멤버십 적립혜택 썸네일"
               />
             </a>
