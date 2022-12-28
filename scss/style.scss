@@ -196,10 +196,10 @@
               height: 52px;
               line-height: 52px;
               .dust {
-                &-fine {
-                }
-                &-super {
-                }
+                // &-fine {
+                // }
+                // &-super {
+                // }
                 .status {
                   margin-left: 7px;
                   i {
@@ -228,7 +228,7 @@
         .air-box:hover {
           @extend .no-underline;
           .place {
-            text-decoration: underline !important;
+            @extend .underline;
           }
         }
 
