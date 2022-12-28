@@ -164,32 +164,40 @@
           <div class="gnb-weather">
             <!-- 미세먼지 -->
             <div class="air">
-              <a href="">
-                <ul class="air-list flex flex-align">
-                  <li class="dust-fine">
-                    <span class="light">미세</span>
-                    <strong class="fine-status">좋음</strong>
+              <!-- 아래 place a 태그와 같음 -->
+              <a href="" class="air-box flex flex-align">
+                <ul class="air-box__list flex flex-align">
+                  <li class="dust dust-fine flex flex-align">
+                    <span>미세</span>
+                    <div class="status status-fine">
+                      <i class="ico-dust--normal"></i>
+                      <strong>좋음</strong>
+                    </div>
                   </li>
-                  <li class="dust-super">
-                    <span class="light">초미세</span>
-                    <strong class="super-status">좋음</strong>
+                  <li class="dust dust-super flex flex-align">
+                    <span>초미세</span>
+                    <div class="status status-super">
+                      <i class="ico-dust--normal"></i>
+                      <strong>매우나쁨</strong>
+                    </div>
                   </li>
-                  <li class="place">
-                    <span class="light">영등포동</span>
-                  </li>
+                  <!-- <li class="place flex flex-align">
+                    <span>영등포동</span>
+                  </li> -->
                 </ul>
+                <span class="place">영등포동</span>
               </a>
             </div>
             <!-- 날씨 -->
             <div class="temp" style="display: none">
-              <a href="">
-                <ul class="temp-list flex">
+              <a href="" class="temp-box">
+                <ul class="temp-box__list flex flex-align">
                   <li class="temp-current"></li>
                   <li class="temp-degree"></li>
-                  <li class="place">
-                    <span class="light">영등포동</span>
-                  </li>
                 </ul>
+              </a>
+              <a href="">
+                <span class="place">영등포동</span>
               </a>
             </div>
           </div>

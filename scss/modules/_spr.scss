@@ -15,6 +15,7 @@
 .sprWeather {
   background-image: url($imgPath + "sp_weather.png");
   background-size: 215px 184px;
+  vertical-align: top;
   background-repeat: no-repeat;
 }
 .sprMy {
@@ -125,3 +126,29 @@
   height: 9px;
   background-position: -146px -327px;
 }
+/*미세먼지 상태*/
+.ico-dust--good {
+  @extend .sprMain-top;
+  width: 18px;
+  height: 19px;
+  background-position: -420px -266px;
+}
+.ico-dust--normal {
+  @extend .sprMain-top;
+  width: 18px;
+  height: 19px;
+  background-position: -420px -246px;
+}
+.ico-dust--bad {
+  @extend .sprMain-top;
+  width: 18px;
+  height: 19px;
+  background-position: -420px -286px;
+}
+.ico-dust--verybad {
+  @extend .sprMain-top;
+  width: 18px;
+  height: 19px;
+  background-position: -420px -226px;
+}
+/*온도와 날씨 상태*/

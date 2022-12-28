@@ -11,7 +11,7 @@
   background-color: #fff;
   z-index: 2000;
   &-top {
-    height: 140px;
+    height: 150px;
     padding-top: 10px;
     .main {
       align-items: initial;
@@ -54,7 +54,7 @@
               }
             }
             &__btn {
-              width: 56px;
+              width: 54px;
               height: 51.5px;
               background-color: $green;
               cursor: pointer;
@@ -189,22 +189,61 @@
         }
       }
       &-weather {
-        align-items: center;
+        /*미세먼지*/
         .air {
-          &-list {
-            height: 52px;
-            .dust-fine {
-              &:after {
-                @extend .txt-bar2;
-                margin: 0 10px 0 8px;
+          &-box {
+            &__list {
+              height: 52px;
+              line-height: 52px;
+              .dust {
+                &-fine {
+                }
+                &-super {
+                }
+                .status {
+                  margin-left: 7px;
+                  i {
+                    display: inline-block;
+                    vertical-align: middle;
+                  }
+                  &-fine {
+                    i {
+                      @extend .ico-dust--normal;
+                    }
+                    &:after {
+                      @extend .txt-bar2;
+                      margin: 0 7px 0 5px;
+                    }
+                  }
+                  &-super {
+                    i {
+                      @extend .ico-dust--verybad;
+                    }
+                  }
+                }
               }
             }
           }
         }
-        .temp {
-          &-list {
-            height: 52px;
+        .air-box:hover {
+          @extend .no-underline;
+          .place {
+            text-decoration: underline !important;
           }
+        }
+
+        /*날씨와 온도*/
+        .temp {
+          &-box {
+            &__list {
+              height: 52px;
+              line-height: 52px;
+            }
+          }
+        }
+        .place {
+          color: #808080;
+          margin-left: 9px;
         }
       }
     }
