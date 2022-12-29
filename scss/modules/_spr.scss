@@ -24,6 +24,12 @@
   background-repeat: no-repeat;
 }
 /* 이미지 스프라이트 활용한 아이콘*/
+.ico-naver {
+  @extend .sprMain-top;
+  width: 222px;
+  height: 52px;
+  background-position: 0 -158px;
+}
 .ico-jrnaver {
   @extend .sprMain-top;
   width: 60px;
