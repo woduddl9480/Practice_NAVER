@@ -336,14 +336,13 @@
           margin-right: 7px;
           a {
             &::after {
-              background-color: #c8ccd1;
+              content: "";
               display: inline-block;
+              background-color: #c8ccd1;
               width: 3px;
               height: 3px;
-              -webkit-border-radius: 50%;
               border-radius: 50%;
               vertical-align: top;
-              content: "";
               margin-left: 8px;
               vertical-align: 3px;
             }
@@ -351,7 +350,10 @@
         }
         &-category {
           a {
-            // margin: 0 4px 0 7px;
+            margin-right: 5px;
+            &:last-child {
+              margin-right: 0;
+            }
           }
         }
 
