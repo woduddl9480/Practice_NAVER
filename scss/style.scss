@@ -282,21 +282,30 @@
         }
       }
     }
-    .newsbox {
-      &-slider {
-        margin: 12px 0;
-        padding: 12px 15px 11px 15px;
-        border: $border-default;
-        background-color: $bg-default;
-        line-height: 24px;
-        .home {
+    .headline {
+      justify-content: space-between;
+      margin: 12px 0;
+      padding: 12px 15px 11px 15px;
+      border: $border-default;
+      background-color: $bg-default;
+      line-height: 24px;
+      .newsbox {
+        &-yh {
           a {
-            padding-right: 12px;
-            margin-right: 7px;
+            margin-right: 1px;
             font-size: 13px;
             color: $black;
             letter-spacing: -0.3px;
-            &:after {
+            strong {
+              &:after {
+                @extend .sprMain-top;
+                content: "";
+                display: inline-block;
+                width: 6px;
+                height: 10px;
+                background-position: -262px -112px;
+                margin: 7px 6px 0;
+              }
             }
           }
           &:hover {
@@ -305,8 +314,57 @@
             }
           }
         }
+        &-slider {
+          a {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: block;
+            width: 310px;
+            font-size: 13px;
+          }
+        }
       }
-      &-press {
+      .link {
+        > div {
+          a {
+            font-size: 13px;
+            @extend .fw-700;
+          }
+        }
+        &-home {
+          margin-right: 7px;
+          a {
+            &::after {
+              background-color: #c8ccd1;
+              display: inline-block;
+              width: 3px;
+              height: 3px;
+              -webkit-border-radius: 50%;
+              border-radius: 50%;
+              vertical-align: top;
+              content: "";
+              margin-left: 8px;
+              vertical-align: 3px;
+            }
+          }
+        }
+        &-category {
+          a {
+            // margin: 0 4px 0 7px;
+          }
+        }
+
+        &:hover {
+          > div {
+            a {
+              @extend .no-underline;
+            }
+          }
+        }
+        .is_active {
+          color: #3565c9;
+        }
       }
     }
   }
