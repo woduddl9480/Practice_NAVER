@@ -353,7 +353,6 @@
             }
           }
         }
-
         &:hover {
           > div {
             a {
@@ -371,7 +370,6 @@
   }
   &-right {
     width: 350px;
-    // box-sizing: border-box;
     > div {
       box-sizing: border-box;
       width: 100%;
@@ -422,7 +420,6 @@
             .nickname {
               @extend .fw-700;
               @extend .no-underline;
-
               span {
                 margin-right: -5px;
                 overflow: hidden;
