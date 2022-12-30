@@ -3,9 +3,6 @@
 @import "./modules/spr";
 
 /*헤더*/
-.test2 {
-  margin: 0 auto;
-}
 .header {
   position: relative;
   background-color: #fff;
@@ -368,6 +365,8 @@
           color: #3565c9;
         }
       }
+    }
+    .newsstand {
     }
   }
   &-right {
