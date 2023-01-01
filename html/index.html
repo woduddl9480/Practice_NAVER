@@ -244,13 +244,15 @@
           <div class="newsstand">
             <div class="newsstand-title">
               <div class="breadcrumb"></div>
-              <div class="option">
-                <div class="option-list"></div>
-                <div class="option-table"></div>
-                <div class="option-set"></div>
+              <div class="option flex">
+                <button type="button" class="option-list" id="option-list"></button>
+                <button type="button" class="option-table is_active" id="option-table"></button>
+                <button type="button" class="option-set" id="option-set"></button>
               </div>
             </div>
-            <div class="newsstand-wrap"></div>
+            <div class="newsstand-wrap">
+                <div class="sontainer-table"></div>
+            </div>
           </div>
         </section>
         <!-- 오른쪽 -->
@@ -350,7 +352,7 @@
                 <a href="" class="slide-link flex" id="currency">
                   <strong class="slide-link__title">환율</strong>
                   <div class="slide-link__content flex">
-                    <div class="country">
+                    <div class="country flex">
                       <i class="ico-usa"></i>
                       <span>USD</span>
                     </div>
