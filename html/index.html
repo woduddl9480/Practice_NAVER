@@ -164,21 +164,21 @@
           </div>
           <div class="gnb-weather">
             <!-- 미세먼지 -->
-            <div class="air">
+            <div class="air" style="display: none">
               <a href="" class="air-box flex flex-align">
                 <ul class="air-box__list flex flex-align">
                   <li class="dust dust-fine flex flex-align">
                     <span>미세</span>
                     <div class="status status-fine">
                       <i class="ico-dust--normal"></i>
-                      <strong>좋음</strong>
+                      <strong>보통</strong>
                     </div>
                   </li>
                   <li class="dust dust-super flex flex-align">
                     <span>초미세</span>
                     <div class="status status-super">
                       <i class="ico-dust--normal"></i>
-                      <strong>보통</strong>
+                      <strong>매우나쁨</strong>
                     </div>
                   </li>
                 </ul>
@@ -186,13 +186,21 @@
               </a>
             </div>
             <!-- 날씨 -->
-            <div class="temp" style="display: none">
-              <a href="" class="temp-box flex-align">
+            <div class="temp">
+              <a href="" class="temp-box flex flex-align">
                 <ul class="temp-box__list flex flex-align">
-                  <li class="wx wx-now flex flex-align"></li>
-                  <li class="wx wx-degree flex flex-align"></li>
+                  <li class="wx wx-now flex flex-align">
+                    <i class="ico-weather"></i>
+                    <strong class="deg">-2.3°</strong>
+                    <strong>맑음</strong>
+                  </li>
+                  <li class="wx wx-degree flex flex-align">
+                    <span class="min">-9.0°</span>
+
+                    <span class="max">-1.0°</span>
+                  </li>
                 </ul>
-                <span class="place">영등포동</span>
+                <span class="place">문정동</span>
               </a>
             </div>
           </div>
@@ -245,14 +253,26 @@
             <div class="newsstand-title">
               <div class="breadcrumb"></div>
               <div class="option flex">
-                <button type="button" class="option-list" id="option-list"></button>
-                <button type="button" class="option-table is_active" id="option-table"></button>
-                <button type="button" class="option-set" id="option-set"></button>
+                <button
+                  type="button"
+                  class="option-list"
+                  id="option-list"
+                ></button>
+                <button
+                  type="button"
+                  class="option-table is_active"
+                  id="option-table"
+                ></button>
+                <button
+                  type="button"
+                  class="option-set"
+                  id="option-set"
+                ></button>
               </div>
             </div>
             <div class="newsstand-wrap">
-                <!-- 테이블은 그리드로? -->
-                <div class="container-table"></div>
+              <!-- 테이블은 그리드로? -->
+              <div class="container-table"></div>
             </div>
           </div>
         </section>

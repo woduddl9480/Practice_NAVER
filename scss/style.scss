@@ -243,9 +243,50 @@
         /*날씨와 온도*/
         .temp {
           &-box {
+            justify-content: flex-end;
             &__list {
               height: 52px;
               line-height: 52px;
+              .wx {
+                &-now {
+                  margin-right: 9px;
+                  i {
+                    @extend .ico-weather--2;
+                    display: inline-block;
+                    margin-right: 9px;
+                  }
+                  strong {
+                    font-size: 13px;
+                    &.deg {
+                      font-size: 15px;
+                      margin-right: 5px;
+                    }
+                  }
+                }
+                &-degree {
+                  .min {
+                    color: #2586ee;
+                  }
+                  .max {
+                    color: #e9564a;
+                    &:before {
+                      content: "";
+                      @extend .sprMain;
+                      display: inline-block;
+                      width: 5px;
+                      height: 11px;
+                      background-position: -437px -182px;
+                      margin: 0 3px -1px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .temp-box:hover {
+            @extend .no-underline;
+            .place {
+              @extend .underline;
             }
           }
         }
@@ -644,7 +685,7 @@
                   @extend .ico-usa;
                   display: inline-block;
                   vertical-align: middle;
-                  margin-right: 2px;
+                  margin-right: 6px;
                   margin-top: -3px;
                 }
               }
