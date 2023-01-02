@@ -264,19 +264,22 @@
                   }
                 }
                 &-degree {
-                  .min {
-                    color: #2586ee;
-                  }
-                  .max {
-                    color: #e9564a;
-                    &:before {
-                      content: "";
-                      @extend .sprMain;
-                      display: inline-block;
-                      width: 5px;
-                      height: 11px;
-                      background-position: -437px -182px;
-                      margin: 0 3px -1px;
+                  span {
+                    font-size: 13px;
+                    &.min {
+                      color: #2586ee;
+                    }
+                    &.max {
+                      color: #e9564a;
+                      &:before {
+                        content: "";
+                        @extend .sprMain;
+                        display: inline-block;
+                        width: 5px;
+                        height: 11px;
+                        background-position: -437px -182px;
+                        margin: 0 3px -1px;
+                      }
                     }
                   }
                 }
