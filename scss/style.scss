@@ -325,7 +325,7 @@
     }
     .headline {
       justify-content: space-between;
-      margin: 12px 0;
+      margin: 12px 0 0;
       padding: 12px 15px 11px 15px;
       border: $border-default;
       background-color: $bg-default;
@@ -376,7 +376,7 @@
         &-home {
           margin-right: 7px;
           a {
-            &::after {
+            &:after {
               content: "";
               display: inline-block;
               background-color: #c8ccd1;
@@ -410,6 +410,123 @@
       }
     }
     .newsstand {
+      &-title {
+        padding: 22px 0 16px;
+        font-size: 14px;
+        line-height: 18px;
+        > ul {
+          width: 100%;
+          justify-content: space-between;
+          .left {
+            li {
+              a,
+              button {
+                font-size: 14px;
+                cursor: pointer;
+              }
+              a:hover {
+                @extend .no-underline;
+              }
+            }
+            .press {
+              li.is_active {
+                button {
+                  color: #000;
+                  font-weight: 700;
+                }
+              }
+              &-home {
+                a {
+                  strong {
+                    color: $black;
+                    &:before {
+                      @extend .ico-newsstand;
+                      content: "";
+                      display: inline-block;
+                      margin: -6px 1px 0 0;
+                    }
+                    &:after {
+                      @extend .sprMain;
+                      content: "";
+                      display: inline-block;
+                      width: 7px;
+                      height: 11px;
+                      background-position: -410px -213px;
+                      margin: 0 10px 0 6px;
+                    }
+                  }
+                }
+              }
+              &-subs {
+                button {
+                  color: $black-light;
+                  &:after {
+                    @extend .dot, .dot-gray--l;
+                    content: "";
+                    margin: 0 7px 0 8px;
+                    vertical-align: 3px;
+                  }
+                }
+              }
+            }
+          }
+          .right {
+            .option {
+              li {
+                padding: 0 9px;
+                button {
+                  cursor: pointer;
+                }
+                i {
+                  display: inline-block;
+                }
+              }
+              &-list {
+                i {
+                  opacity: 0.7;
+                }
+                &:hover {
+                  i {
+                    opacity: 1;
+                  }
+                }
+                &.is_active {
+                  i {
+                    @extend .ico-list--blue;
+                    opacity: 1 !important;
+                  }
+                }
+              }
+              &-table {
+                i {
+                  opacity: 0.7;
+                }
+                &:hover {
+                  i {
+                    opacity: 1;
+                  }
+                }
+                &.is_active {
+                  i {
+                    @extend .ico-table--blue;
+                    opacity: 1;
+                  }
+                }
+              }
+              &-setting {
+                i {
+                  opacity: 0.7;
+                }
+                &:hover {
+                  i {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
   &-right {

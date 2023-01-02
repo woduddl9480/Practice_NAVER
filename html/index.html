@@ -250,26 +250,54 @@
           </div>
           <!-- 뉴스스탠드 -->
           <div class="newsstand">
-            <div class="newsstand-title">
-              <div class="breadcrumb"></div>
-              <div class="option flex">
-                <button
-                  type="button"
-                  class="option-list"
-                  id="option-list"
-                ></button>
-                <button
-                  type="button"
-                  class="option-table is_active"
-                  id="option-table"
-                ></button>
-                <button
-                  type="button"
-                  class="option-set"
-                  id="option-set"
-                ></button>
-              </div>
+            <!-- 상단타이틀 -->
+            <div class="newsstand-title flex">
+              <ul class="flex">
+                <li class="left">
+                  <ul class="press flex">
+                    <li class="press-home">
+                      <a href="">
+                        <strong>뉴스스탠드</strong>
+                      </a>
+                    </li>
+                    <li class="press-subs">
+                      <button type="button">구독한 언론사</button>
+                    </li>
+                    <li class="press-all is_active">
+                      <button type="button">전체언론사</button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="right">
+                  <ul class="option flex">
+                    <li class="option-list">
+                      <button
+                        type="button"
+                        class="option-list"
+                        id="option-list"
+                      >
+                        <i class="ico-list"></i>
+                      </button>
+                    </li>
+                    <li class="option-table">
+                      <button
+                        type="button"
+                        class="option-table is_active"
+                        id="option-table"
+                      >
+                        <i class="ico-table"></i>
+                      </button>
+                    </li>
+                    <li class="option-setting">
+                      <a href="" class="option-set">
+                        <i class="ico-setting2"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
+            <!-- 하단 테이블 -->
             <div class="newsstand-wrap">
               <!-- 테이블은 그리드로? -->
               <div class="container-table"></div>

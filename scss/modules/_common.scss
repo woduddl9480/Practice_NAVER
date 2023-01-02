@@ -68,3 +68,22 @@
 .underline {
   text-decoration: underline !important;
 }
+.dot {
+  display: inline-block;
+  border-radius: 50%;
+  &-gray--l {
+    background-color: #c7ccd1;
+    width: 4px;
+    height: 4px;
+  }
+  &-gray--s {
+    background-color: #c9cccf;
+    width: 3px;
+    height: 3px;
+  }
+  &-green {
+    background-color: #1ace61;
+    width: 4px;
+    height: 4px;
+  }
+}
