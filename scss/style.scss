@@ -574,6 +574,7 @@
               text-align: center;
               img {
                 height: 20px;
+                image-rendering: -webkit-optimize-contrast;
               }
             }
           }
