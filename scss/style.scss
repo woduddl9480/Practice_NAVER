@@ -5,7 +5,7 @@
 /*헤더*/
 .header {
   position: relative;
-  background-color: #fff;
+  background-color: $white;
   z-index: 2000;
   &-top {
     height: 160px;
@@ -431,8 +431,8 @@
             .press {
               li.is_active {
                 button {
-                  color: #000;
-                  font-weight: 700;
+                  color: $black;
+                  @extend .fw-700;
                 }
               }
               &-home {
@@ -656,7 +656,7 @@
             -webkit-border-radius: 14px;
             border-radius: 14px;
             font-size: 11px;
-            color: #fff;
+            color: $white;
             cursor: pointer;
             @extend .no-underline;
           }

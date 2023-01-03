@@ -1,6 +1,6 @@
 @import "./variable";
 
-/*이미지 스프라이트*/
+/*이미지 스프라이트 원본*/
 .sprMain-top {
   background-image: url($imgPath + "sp_main.png");
   background-size: 442px 428px;
@@ -412,6 +412,7 @@
   background-position: -188px -156px;
 }
 /*온도와 날씨 상태 끝*/
+
 .ico-newsstand {
   @extend .sprMain-top;
   width: 27px;
