@@ -314,12 +314,12 @@
       border: 1px solid rgba(0, 0, 0, 0.1);
       height: 135px;
       a {
+        display: block;
         width: 100%;
-        height: 100%;
+        height: 135px;
         img {
           width: 100%;
           height: 100%;
-          object-fit: cover;
           image-rendering: -webkit-optimize-contrast;
         }
       }
@@ -1018,6 +1018,8 @@
       height: 200px;
       border: $border-default;
       a {
+        display: block;
+        height: 200px;
         img {
           width: 100%;
           height: 100%;
