@@ -20,7 +20,7 @@
           .naver {
             i {
               @extend .ico-naver;
-              display: inline-block;
+              @extend .inline;
               margin: -4px 10px 0px -10px;
             }
           }
@@ -77,7 +77,7 @@
         &::after {
           @extend .sprMain-top;
           content: "";
-          display: inline-block;
+          @extend .inline;
           width: 26px;
           height: 26px;
           background-position: -382px -213px;
@@ -92,7 +92,7 @@
       .jrnaver {
         margin-right: 10px;
         & .ico-jrnaver {
-          display: inline-block;
+          @extend .inline;
           margin: 2px 3px 0 0;
         }
         &:hover {
@@ -108,7 +108,7 @@
         }
         &:before {
           content: "";
-          display: inline-block;
+          @extend .inline;
           width: 1px;
           height: 10px;
           margin: 3px 7px;
@@ -116,9 +116,9 @@
         }
       }
       .happybean {
-        display: inline-block;
+        @extend .inline;
         & .ico-happybean {
-          display: inline-block;
+          @extend .inline;
           vertical-align: text-top;
         }
         &:hover {
@@ -150,7 +150,7 @@
             a {
               vertical-align: middle;
               i {
-                display: inline-block !important;
+                @extend .inline !important;
                 &.ico-mail {
                   margin-right: 5px;
                 }
@@ -184,7 +184,7 @@
             }
             span:after {
               content: "";
-              display: inline-block;
+              @extend .inline;
               @extend .sprMain-top;
               width: 11px;
               height: 7px;
@@ -212,7 +212,7 @@
                 .status {
                   margin-left: 7px;
                   i {
-                    display: inline-block;
+                    @extend .inline;
                     vertical-align: middle;
                   }
                   &-fine {
@@ -252,7 +252,7 @@
                   margin-right: 9px;
                   i {
                     @extend .ico-weather--2;
-                    display: inline-block;
+                    @extend .inline;
                     margin-right: 12px;
                   }
                   strong {
@@ -274,7 +274,7 @@
                       &:before {
                         content: "";
                         @extend .sprMain;
-                        display: inline-block;
+                        @extend .inline;
                         width: 5px;
                         height: 11px;
                         background-position: -437px -182px;
@@ -341,7 +341,7 @@
               &:after {
                 @extend .sprMain-top;
                 content: "";
-                display: inline-block;
+                @extend .inline;
                 width: 6px;
                 height: 10px;
                 background-position: -262px -112px;
@@ -378,7 +378,7 @@
           a {
             &:after {
               content: "";
-              display: inline-block;
+              @extend .inline;
               background-color: #c8ccd1;
               width: 3px;
               height: 3px;
@@ -442,13 +442,13 @@
                     &:before {
                       @extend .ico-newsstand;
                       content: "";
-                      display: inline-block;
+                      @extend .inline;
                       margin: -6px 1px 0 0;
                     }
                     &:after {
                       @extend .sprMain;
                       content: "";
-                      display: inline-block;
+                      @extend .inline;
                       width: 7px;
                       height: 11px;
                       background-position: -410px -213px;
@@ -478,7 +478,7 @@
                   cursor: pointer;
                 }
                 i {
-                  display: inline-block;
+                  @extend .inline;
                 }
               }
               &-list {
@@ -589,7 +589,7 @@
             }
             i {
               position: absolute;
-              display: inline-block;
+              @extend .inline;
               right: -3px;
               bottom: -1px;
             }
@@ -608,13 +608,13 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
-                display: inline-block;
+                @extend .inline;
                 max-width: 85px;
                 vertical-align: top;
               }
               &:after {
                 content: "";
-                display: inline-block;
+                @extend .inline;
                 width: 1px;
                 height: 12px;
                 margin: 0 7px 0 3px;
@@ -628,7 +628,7 @@
             }
             .secure {
               i {
-                display: inline-block;
+                @extend .inline;
               }
             }
             .secure:hover {
@@ -668,7 +668,7 @@
           a {
             &.note:after {
               content: "";
-              display: inline-block;
+              @extend .inline;
               margin: 2px 9px 0 3px;
               width: 1px;
               height: 11px;
@@ -677,7 +677,7 @@
             }
             &.nplus {
               i {
-                display: inline-block;
+                @extend .inline;
               }
               span {
                 vertical-align: top;
@@ -686,7 +686,7 @@
             &.nplus:after {
               @extend .sprMy;
               content: "";
-              display: inline-block;
+              @extend .inline;
               margin: 0 2px 2px -2px;
               width: 5px;
               height: 8px;
@@ -748,7 +748,7 @@
             white-space: nowrap;
             .tab {
               position: relative;
-              display: inline-block;
+              @extend .inline;
               width: 69px;
               height: 40px;
               padding: 13px 0 11px;
@@ -773,7 +773,7 @@
                 right: 0;
                 &-green {
                   @extend .fw-700;
-                  display: inline-block;
+                  @extend .inline;
                   min-width: 6px;
                   height: 18px;
                   padding: 0 6px;
@@ -809,7 +809,7 @@
             &__title {
               &:after {
                 content: "";
-                display: inline-block;
+                @extend .inline;
                 width: 1px;
                 height: 12px;
                 margin: 0 7px;
@@ -825,7 +825,7 @@
                 margin-right: 6px;
                 .ico-usa {
                   @extend .ico-usa;
-                  display: inline-block;
+                  @extend .inline;
                   vertical-align: middle;
                   margin-right: 6px;
                   margin-top: -3px;
@@ -840,7 +840,7 @@
               .rate {
                 .ico-arrowblue {
                   @extend .ico-arrowblue;
-                  display: inline-block;
+                  @extend .inline;
                   margin-bottom: 1.5px;
                 }
                 span {
@@ -865,7 +865,7 @@
             &.slide-prev {
               i {
                 @extend .ico-issue--prev;
-                display: inline-block;
+                @extend .inline;
               }
               i:hover {
                 @extend .sprMain;
@@ -878,7 +878,7 @@
               margin-left: -1px;
               i {
                 @extend .ico-issue--next;
-                display: inline-block;
+                @extend .inline;
               }
               i:hover {
                 @extend .sprMain;
@@ -892,7 +892,7 @@
             background-color: $bg-default;
             &.slide-prev {
               i {
-                display: inline-block;
+                @extend .inline;
                 @extend .sprMain;
                 width: 6px;
                 height: 9px;
@@ -902,7 +902,7 @@
             &.slide-next {
               margin-left: -1px;
               i {
-                display: inline-block;
+                @extend .inline;
                 @extend .sprMain;
                 width: 5px;
                 height: 9px;
@@ -1019,7 +1019,7 @@
         .footer-title {
           span:after {
             content: "";
-            display: inline-block;
+            @extend .inline;
             @extend .sprMain-top;
             width: 7px;
             height: 11px;

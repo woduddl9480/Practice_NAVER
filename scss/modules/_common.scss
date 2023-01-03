@@ -41,11 +41,20 @@
 .fw-700 {
   font-weight: 700 !important;
 }
+.inline {
+  display: inline-block;
+}
+.no-underline {
+  text-decoration: none !important;
+}
+.underline {
+  text-decoration: underline !important;
+}
 .txt-bar {
   display: flex;
   li:after {
     content: "";
-    display: inline-block;
+    @extend .inline;
     width: 1px;
     height: 11px;
     background-color: $bg-gray;
@@ -57,19 +66,13 @@
 }
 .txt-bar2 {
   content: "";
-  display: inline-block;
+  @extend .inline;
   width: 1px;
   height: 12px;
   background-color: $bg-gray;
 }
-.no-underline {
-  text-decoration: none !important;
-}
-.underline {
-  text-decoration: underline !important;
-}
 .dot {
-  display: inline-block;
+  @extend .inline;
   border-radius: 50%;
   &-gray--l {
     background-color: #c7ccd1;
