@@ -869,11 +869,13 @@
         &__btn {
           padding: 12px 11px;
           button {
+            width: 24px;
+            height: 24px;
             border: $border-gray;
             background-color: $white;
             cursor: pointer;
             i {
-              margin: 6px 8px 4px;
+              margin: 7px 8px 7px;
             }
             &.slide-prev {
               i {
