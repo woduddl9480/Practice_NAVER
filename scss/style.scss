@@ -530,10 +530,22 @@
       &-wrap {
         width: 100%;
         .container {
+          position: relative;
           height: 260px;
           border: $border-default;
           border-width: 0 0 1px 1px;
           flex-wrap: wrap;
+          .newsbtn {
+            position: absolute;
+            top: 109px;
+            z-index: 10;
+            &-prev {
+              display: none;
+            }
+            &-prev {
+              @extend .inline;
+            }
+          }
           &-item {
             border: $border-default;
             border-width: 1px 1px 0 0;
