@@ -102,6 +102,31 @@
   height: 34px;
   background-position: -73px -37px;
 }
+.ico-prev--m {
+  @extend .sprMain;
+  width: 40px;
+  height: 40px;
+  background-position: -128px -342px;
+}
+.ico-next--m {
+  @extend .sprMain;
+  width: 40px;
+  height: 40px;
+  background-position: -86px -342px;
+}
+.ico-prev--l {
+  @extend .sprMain;
+  width: 44px;
+  height: 44px;
+  background-position: -224px -158px;
+}
+.ico-next--l {
+  @extend .sprMain;
+  width: 44px;
+  height: 44px;
+  background-position: -92px -296px;
+}
+
 .ico-slideprev {
   @extend .sprMain-top;
   width: 6px;

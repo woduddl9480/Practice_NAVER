@@ -537,13 +537,29 @@
           flex-wrap: wrap;
           .newsbtn {
             position: absolute;
+            @extend .inline;
             top: 109px;
             z-index: 10;
+            cursor: pointer;
             &-prev {
-              display: none;
+              @extend .ico-prev--l;
+              left: -22px;
+              &:hover {
+                @extend .sprMain;
+                width: 44px;
+                height: 44px;
+                background-position: -46px -296px;
+              }
             }
-            &-prev {
-              @extend .inline;
+            &-next {
+              @extend .ico-next--l;
+              right: -20px;
+              &:hover {
+                @extend .sprMain;
+                width: 44px;
+                height: 44px;
+                background-position: 0 -296px;
+              }
             }
           }
           &-item {
