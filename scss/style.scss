@@ -702,36 +702,64 @@
                   margin: 0 -1px;
                   border-radius: 1px;
                   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+                  &:hover {
+                    color: $white;
+                  }
                 }
               }
+              /*엔터*/
               &-entertain {
                 &:hover {
                   button {
                     color: $entertain;
                   }
                 }
+                &.is_active {
+                  button {
+                    background-color: $entertain;
+                  }
+                }
               }
+              /*스포트*/
               &-soprts {
                 &:hover {
                   button {
                     color: $sports;
                   }
                 }
+                &.is_active {
+                  button {
+                    background-color: $sports;
+                  }
+                }
               }
+              /*웹툰*/
               &-webtoon {
                 &:hover {
                   button {
                     color: $webtoon;
                   }
                 }
+                &.is_active {
+                  button {
+                    background-color: $webtoon;
+                  }
+                }
               }
+              /*패션뷰티*/
               &-fashion {
                 &:hover {
                   button {
                     color: $fashion;
                   }
                 }
+                &.is_active {
+                  button {
+                    background-color: $fashion;
+                  }
+                }
               }
+              /*레시피*/
               &-recipe {
                 &:hover {
                   button {
@@ -741,44 +769,71 @@
                 &.is_active {
                   button {
                     background-color: $recipe;
-                    &:hover {
-                      color: $white;
-                    }
                   }
                 }
               }
+              /*리빙*/
               &-living {
                 &:hover {
                   button {
                     color: $living;
                   }
                 }
+                &.is_active {
+                  button {
+                    background-color: $living;
+                  }
+                }
               }
+              /*책방*/
               &-book {
                 &:hover {
                   button {
                     color: $book;
                   }
                 }
+                &.is_active {
+                  button {
+                    background-color: $book;
+                  }
+                }
               }
+              /*경제*/
               &-economy {
                 &:hover {
                   button {
                     color: $economy;
                   }
                 }
+                &.is_active {
+                  button {
+                    background-color: $economy;
+                  }
+                }
               }
+              /*추천·구독*/
               &-recommend {
                 &:hover {
                   button {
                     color: $recommend;
                   }
                 }
+                &.is_active {
+                  button {
+                    background-color: $recommend;
+                  }
+                }
               }
+              /*자동차*/
               &-car {
                 &:hover {
                   button {
                     color: $car;
+                  }
+                }
+                &.is_active {
+                  button {
+                    background-color: $car;
                   }
                 }
               }
