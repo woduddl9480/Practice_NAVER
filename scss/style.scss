@@ -409,8 +409,9 @@
         }
       }
     }
+    /*뉴스스탠드*/
     .newsstand {
-      &-title {
+      &-head {
         padding: 22px 0 16px;
         font-size: 14px;
         line-height: 18px;
@@ -580,17 +581,17 @@
         }
       }
     }
+    /*오늘의 읽을만한 글*/
     .today {
       padding: 35px 0 27px;
       letter-spacing: -0.25px;
-      .head {
+      &-head {
         ul {
           width: 100%;
         }
-        &-info {
+        &__title {
           justify-content: space-between;
           padding-bottom: 17px;
-
           strong {
             color: $black;
           }
@@ -645,7 +646,7 @@
             }
           }
         }
-        &-theme {
+        &__theme {
           position: relative;
           .todaybtn {
             position: absolute;
