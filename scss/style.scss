@@ -646,7 +646,202 @@
             }
           }
         }
-        &__theme {
+        // .tab-wrap {
+        //   position: relative;
+        //   .todaybtn {
+        //     position: absolute;
+        //     top: 6px;
+        //     cursor: pointer;
+        //     z-index: 10;
+        //     &-prev {
+        //       @extend .ico-prev--m;
+        //       @extend .inline;
+        //       left: -23px;
+        //       &:hover {
+        //         @extend .sprMain;
+        //         width: 40px;
+        //         height: 40px;
+        //         background-position: -170px -342px;
+        //       }
+        //     }
+        //     &-next {
+        //       @extend .ico-next--m;
+        //       @extend .inline;
+        //       right: -18px;
+        //       &:hover {
+        //         @extend .sprMain;
+        //         width: 40px;
+        //         height: 40px;
+        //         background-position: -44px -342px;
+        //       }
+        //     }
+        //   }
+        //   .tabs {
+        //     overflow: hidden;
+        //     white-space: nowrap;
+        //     border: $border-default;
+        //     .name {
+        //       display: inline-block;
+        //       width: 94px;
+        //       z-index: 1;
+        //       vertical-align: top;
+        //       button {
+        //         display: block;
+        //         border-right: $border-default;
+        //         width: 94px;
+        //         font-size: 13px;
+        //         line-height: 49px;
+        //         text-align: center;
+        //         @extend .fw-700;
+        //         cursor: pointer;
+        //       }
+        //       &.is_active {
+        //         button {
+        //           color: $white;
+        //           margin: 0 -1px;
+        //           border-radius: 1px;
+        //           box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        //           &:hover {
+        //             color: $white;
+        //           }
+        //         }
+        //       }
+        //       /*엔터*/
+        //       &-entertain {
+        //         &:hover {
+        //           button {
+        //             color: $entertain;
+        //           }
+        //         }
+        //         &.is_active {
+        //           button {
+        //             background-color: $entertain;
+        //           }
+        //         }
+        //       }
+        //       /*스포츠*/
+        //       &-soprts {
+        //         &:hover {
+        //           button {
+        //             color: $sports;
+        //           }
+        //         }
+        //         &.is_active {
+        //           button {
+        //             background-color: $sports;
+        //           }
+        //         }
+        //       }
+        //       /*웹툰*/
+        //       &-webtoon {
+        //         &:hover {
+        //           button {
+        //             color: $webtoon;
+        //           }
+        //         }
+        //         &.is_active {
+        //           button {
+        //             background-color: $webtoon;
+        //           }
+        //         }
+        //       }
+        //       /*패션뷰티*/
+        //       &-fashion {
+        //         &:hover {
+        //           button {
+        //             color: $fashion;
+        //           }
+        //         }
+        //         &.is_active {
+        //           button {
+        //             background-color: $fashion;
+        //           }
+        //         }
+        //       }
+        //       /*레시피*/
+        //       &-recipe {
+        //         &:hover {
+        //           button {
+        //             color: $recipe;
+        //           }
+        //         }
+        //         &.is_active {
+        //           button {
+        //             background-color: $recipe;
+        //           }
+        //         }
+        //       }
+        //       /*리빙*/
+        //       &-living {
+        //         &:hover {
+        //           button {
+        //             color: $living;
+        //           }
+        //         }
+        //         &.is_active {
+        //           button {
+        //             background-color: $living;
+        //           }
+        //         }
+        //       }
+        //       /*책방*/
+        //       &-book {
+        //         &:hover {
+        //           button {
+        //             color: $book;
+        //           }
+        //         }
+        //         &.is_active {
+        //           button {
+        //             background-color: $book;
+        //           }
+        //         }
+        //       }
+        //       /*경제*/
+        //       &-economy {
+        //         &:hover {
+        //           button {
+        //             color: $economy;
+        //           }
+        //         }
+        //         &.is_active {
+        //           button {
+        //             background-color: $economy;
+        //           }
+        //         }
+        //       }
+        //       /*추천·구독*/
+        //       &-recommend {
+        //         &:hover {
+        //           button {
+        //             color: $recommend;
+        //           }
+        //         }
+        //         &.is_active {
+        //           button {
+        //             background-color: $recommend;
+        //           }
+        //         }
+        //       }
+        //       /*자동차*/
+        //       &-car {
+        //         &:hover {
+        //           button {
+        //             color: $car;
+        //           }
+        //         }
+        //         &.is_active {
+        //           button {
+        //             background-color: $car;
+        //           }
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
+      }
+      &-conts {
+        .tab-wrap {
           position: relative;
           .todaybtn {
             position: absolute;
@@ -676,7 +871,7 @@
               }
             }
           }
-          ul {
+          .tabs {
             overflow: hidden;
             white-space: nowrap;
             border: $border-default;
@@ -839,9 +1034,6 @@
             }
           }
         }
-      }
-      &-wrap {
-        padding-top: 4px;
       }
     }
   }
