@@ -646,21 +646,63 @@
           }
         }
         &-theme {
+          position: relative;
+          .todaybtn {
+            position: absolute;
+            top: 6px;
+            cursor: pointer;
+            z-index: 10;
+            &-prev {
+              @extend .ico-prev--m;
+              @extend .inline;
+              left: -23px;
+              &:hover {
+                @extend .sprMain;
+                width: 40px;
+                height: 40px;
+                background-position: -170px -342px;
+              }
+            }
+            &-next {
+              @extend .ico-next--m;
+              @extend .inline;
+              right: -18px;
+              &:hover {
+                @extend .sprMain;
+                width: 40px;
+                height: 40px;
+                background-position: -44px -342px;
+              }
+            }
+          }
           ul {
             overflow: hidden;
+            white-space: nowrap;
             border: $border-default;
+            // position: relative;
             .name {
+              // position: relative;
               display: inline-block;
+              width: 94px;
+              z-index: 1;
               vertical-align: top;
               button {
+                display: block;
                 border-right: $border-default;
                 width: 94px;
                 font-size: 13px;
                 line-height: 49px;
-                background-color: $white;
                 text-align: center;
                 @extend .fw-700;
                 cursor: pointer;
+              }
+              &.is_active {
+                button {
+                  color: $white;
+                  margin: 0 -1px;
+                  border-radius: 1px;
+                  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+                }
               }
               &-entertain {
                 &:hover {
@@ -694,6 +736,14 @@
                 &:hover {
                   button {
                     color: $recipe;
+                  }
+                }
+                &.is_active {
+                  button {
+                    background-color: $recipe;
+                    &:hover {
+                      color: $white;
+                    }
                   }
                 }
               }
