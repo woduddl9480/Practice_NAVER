@@ -645,6 +645,96 @@
             }
           }
         }
+        &-theme {
+          ul {
+            overflow: hidden;
+            border: $border-default;
+            .name {
+              display: inline-block;
+              vertical-align: top;
+              button {
+                border-right: $border-default;
+                width: 94px;
+                font-size: 13px;
+                line-height: 49px;
+                background-color: $white;
+                text-align: center;
+                @extend .fw-700;
+                cursor: pointer;
+              }
+              &-entertain {
+                &:hover {
+                  button {
+                    color: $entertain;
+                  }
+                }
+              }
+              &-soprts {
+                &:hover {
+                  button {
+                    color: $sports;
+                  }
+                }
+              }
+              &-webtoon {
+                &:hover {
+                  button {
+                    color: $webtoon;
+                  }
+                }
+              }
+              &-fashion {
+                &:hover {
+                  button {
+                    color: $fashion;
+                  }
+                }
+              }
+              &-recipe {
+                &:hover {
+                  button {
+                    color: $recipe;
+                  }
+                }
+              }
+              &-living {
+                &:hover {
+                  button {
+                    color: $living;
+                  }
+                }
+              }
+              &-book {
+                &:hover {
+                  button {
+                    color: $book;
+                  }
+                }
+              }
+              &-economy {
+                &:hover {
+                  button {
+                    color: $economy;
+                  }
+                }
+              }
+              &-recommend {
+                &:hover {
+                  button {
+                    color: $recommend;
+                  }
+                }
+              }
+              &-car {
+                &:hover {
+                  button {
+                    color: $car;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
