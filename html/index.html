@@ -9,8 +9,8 @@
     <!-- css -->
     <link rel="stylesheet" href="/css/style.min.css" />
     <link rel="stylesheet" href="/css/reset.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- js -->
-    <script src="/js/common.js"></script>
   </head>
   <body>
     <!-- 헤더 -->
@@ -162,46 +162,47 @@
               </a>
             </div>
           </div>
-          <div class="gnb-weather">
+          <div class="gnb-weather mySwiper">
             <!-- 미세먼지 -->
-            <div class="air" style="display: none">
-              <a href="" class="air-box flex flex-align">
-                <ul class="air-box__list flex flex-align">
-                  <li class="dust dust-fine flex flex-align">
-                    <span>미세</span>
-                    <div class="status status-fine">
-                      <i class="ico-dust--normal"></i>
-                      <strong>보통</strong>
-                    </div>
-                  </li>
-                  <li class="dust dust-super flex flex-align">
-                    <span>초미세</span>
-                    <div class="status status-super">
-                      <i class="ico-dust--normal"></i>
-                      <strong>매우나쁨</strong>
-                    </div>
-                  </li>
-                </ul>
-                <span class="place">문정동</span>
-              </a>
-            </div>
-            <!-- 날씨 -->
-            <div class="temp">
-              <a href="" class="temp-box flex flex-align">
-                <ul class="temp-box__list flex flex-align">
-                  <li class="wx wx-now flex flex-align">
-                    <i class="ico-weather"></i>
-                    <strong class="deg">-2.3°</strong>
-                    <strong>맑음</strong>
-                  </li>
-                  <li class="wx wx-degree flex flex-align">
-                    <span class="min">-9.0°</span>
-
-                    <span class="max">-1.0°</span>
-                  </li>
-                </ul>
-                <span class="place">문정동</span>
-              </a>
+            <div class="swiper-wrapper">
+              <div class="air swiper-slide">
+                <a href="" class="air-box flex flex-align">
+                  <ul class="air-box__list flex flex-align">
+                    <li class="dust dust-fine flex flex-align">
+                      <span>미세</span>
+                      <div class="status status-fine">
+                        <i class="ico-dust--normal"></i>
+                        <strong>보통</strong>
+                      </div>
+                    </li>
+                    <li class="dust dust-super flex flex-align">
+                      <span>초미세</span>
+                      <div class="status status-super">
+                        <i class="ico-dust--normal"></i>
+                        <strong>매우나쁨</strong>
+                      </div>
+                    </li>
+                  </ul>
+                  <span class="place">문정동</span>
+                </a>
+              </div>
+              <!-- 날씨 -->
+              <div class="temp swiper-slide">
+                <a href="" class="temp-box flex flex-align">
+                  <ul class="temp-box__list flex flex-align">
+                    <li class="wx wx-now flex flex-align">
+                      <i class="ico-weather"></i>
+                      <strong class="deg">-2.3°</strong>
+                      <strong>맑음</strong>
+                    </li>
+                    <li class="wx wx-degree flex flex-align">
+                      <span class="min">-9.0°</span>
+                      <span class="max">-1.0°</span>
+                    </li>
+                  </ul>
+                  <span class="place">문정동</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -839,5 +840,6 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="/js/common.js"></script>
   </body>
 </html>
