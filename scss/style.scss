@@ -855,8 +855,10 @@
               }
               &-top {
                 padding: 18px 0;
-                .vidbox {
-                  width: 364px;
+                .imgbox {
+                  &-l {
+                    width: 364px;
+                  }
                   @extend .enlarge;
                   a {
                     display: block;
