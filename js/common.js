@@ -1,4 +1,5 @@
-let swiper = new Swiper(".mySwiper", {
+// 세로방향 슬라이드
+var swiper = new Swiper(".mySwiper", {
   direction: "vertical",
   spaceBetween: 30,
   centeredSlides: true,

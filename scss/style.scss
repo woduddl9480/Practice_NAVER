@@ -332,8 +332,10 @@
       border: $border-default;
       background-color: $bg-default;
       line-height: 24px;
+      height: 49px;
       .newsbox {
         &-yh {
+          width: 70px;
           a {
             margin-right: 1px;
             font-size: 13px;
@@ -358,13 +360,18 @@
           }
         }
         &-slider {
-          a {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            display: block;
-            width: 310px;
-            font-size: 13px;
+          width: calc(100% - 70px);
+          overflow: hidden;
+          height: inherit;
+          .swiper-news {
+            a {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              display: block;
+              width: 310px;
+              font-size: 13px;
+            }
           }
         }
       }
