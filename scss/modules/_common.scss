@@ -90,3 +90,16 @@
     height: 4px;
   }
 }
+.enlarge {
+  border: none;
+  transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  image-rendering: -webkit-optimize-contrast;
+}
+.img-hover {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
