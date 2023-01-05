@@ -103,3 +103,86 @@
   -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
+.badge {
+  position: absolute;
+  line-height: 14px;
+  color: #fff;
+  border-radius: 2px;
+  &-l {
+    bottom: 8px;
+    right: 10px;
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+  &-s {
+    right: 8px;
+    bottom: 6px;
+    padding: 2px 4px;
+    font-size: 11px;
+  }
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    background-color: #000;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: transparent;
+  }
+  em {
+    position: relative;
+    z-index: 1;
+  }
+}
+.em {
+  @extend .fw-700;
+  &-entertain {
+    color: $entertain;
+  }
+  &-sports {
+    color: $sports;
+  }
+  &-webtoon {
+    color: $webtoon;
+  }
+  &-fashion {
+    color: $fashion;
+  }
+  &-recipe {
+    color: $recipe;
+  }
+  &-living {
+    color: $living;
+  }
+  &-book {
+    color: $book;
+  }
+  &-economy {
+    color: $economy;
+  }
+  &-recommend {
+    color: $recommend;
+  }
+  &-car {
+    color: $car;
+  }
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+.ellipsis-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  max-height: 40px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
