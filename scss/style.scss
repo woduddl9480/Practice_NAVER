@@ -335,7 +335,7 @@
       height: 49px;
       .newsbox {
         &-yh {
-          width: 70px;
+          max-width: 80px;
           a {
             margin-right: 1px;
             font-size: 13px;
@@ -360,7 +360,6 @@
           }
         }
         &-slider {
-          width: calc(100% - 70px);
           overflow: hidden;
           height: inherit;
           .swiper-news {
