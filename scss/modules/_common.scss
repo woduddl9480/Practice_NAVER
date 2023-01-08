@@ -171,12 +171,14 @@
     color: $car;
   }
 }
+/*한줄짜리*/
 .ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   display: block;
 }
+/*두줄짜리*/
 .ellipsis-2 {
   display: -webkit-box;
   overflow: hidden;

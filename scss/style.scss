@@ -855,9 +855,16 @@
               }
               &-top {
                 padding: 18px 0;
+                /*스타일 공통화 필요*/
                 .imgbox {
                   &-l {
                     width: 364px;
+                  }
+                  &-m {
+
+                  }
+                  &-s {
+                    
                   }
                   @extend .enlarge;
                   a {
