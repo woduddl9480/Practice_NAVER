@@ -201,6 +201,11 @@
     }
   }
   &-m {
+    width: 232px;
+    margin-right: 27px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
   &-s {
     margin-bottom: 18px;
@@ -210,7 +215,6 @@
   }
   @extend .enlarge;
   a {
-    // display: block;
     .area {
       &-thumb {
         &__l {
@@ -255,6 +259,13 @@
         }
       }
       &-text {
+        &__m {
+          padding: 12px 0px 0 0;
+          .title {
+            @extend .ellipsis-2;
+            white-space: normal;
+          }
+        }
         &__s {
           padding: 4px 47px 0 0;
           .info {
@@ -287,15 +298,23 @@
             @extend .ellipsis;
             color: $gray-2;
             line-height: 20px;
-            .date {
-              color: $gray-3;
-              &:before {
-                @extend .dot, .dot-gray--xs;
-                @extend .inline;
-                content: "";
-                margin: 0 5px 0 6px;
-                vertical-align: 3px;
-              }
+          }
+          .date {
+            color: $gray-3;
+            &:before {
+              @extend .dot, .dot-gray--xs;
+              @extend .inline;
+              content: "";
+              margin: 0 5px 0 6px;
+              vertical-align: 3px;
+            }
+          }
+          &-thumb {
+            margin-right: 5px;
+            img {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
             }
           }
         }
