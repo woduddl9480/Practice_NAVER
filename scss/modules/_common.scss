@@ -84,6 +84,11 @@
     width: 3px;
     height: 3px;
   }
+  &-gray--xs {
+    background-color: $gray-3;
+    width: 2px;
+    height: 2px;
+  }
   &-green {
     background-color: #1ace61;
     width: 4px;
@@ -191,6 +196,9 @@
 .imgbox {
   &-l {
     width: 364px;
+    &:first-child {
+      margin-right: 22px;
+    }
   }
   &-m {
   }
@@ -198,11 +206,18 @@
   }
   @extend .enlarge;
   a {
-    display: block;
+    // display: block;
     .area {
       &-thumb {
+        &__l {
+          height: 180px;
+        }
+        &__s {
+          width: 170px;
+          height: 114px;
+          margin-right: 21px;
+        }
         position: relative;
-        height: 180px;
         overflow: hidden;
         img {
           width: 100%;
@@ -236,6 +251,14 @@
         }
       }
       &-text {
+        &__s {
+          padding: 4px 47px 0 0;
+          .info {
+            &-main {
+              max-width: 512px;
+            }
+          }
+        }
         display: block;
         padding: 16px 18px 0 0;
         .em {
@@ -252,12 +275,24 @@
             @extend .ellipsis-2;
             color: $gray-1;
             font-size: 13px;
+            max-height: 42px;
             line-height: 21px;
             margin-bottom: 4px;
           }
           &-btm {
             @extend .ellipsis;
             color: $gray-2;
+            line-height: 20px;
+            .date {
+              color: $gray-3;
+              &:before {
+                @extend .dot, .dot-gray--xs;
+                @extend .inline;
+                content: "";
+                margin: 0 5px 0 6px;
+                vertical-align: 3px;
+              }
+            }
           }
         }
       }
@@ -273,8 +308,5 @@
     img {
       @extend .img-hover;
     }
-  }
-  &:first-child {
-    margin-right: 22px;
   }
 }
