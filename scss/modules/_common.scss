@@ -110,20 +110,24 @@
 }
 .badge {
   position: absolute;
-  line-height: 14px;
+
   color: #fff;
-  border-radius: 2px;
+
   &-l {
     bottom: 8px;
     right: 10px;
     padding: 3px 6px;
     font-size: 12px;
+    line-height: 14px;
+    border-radius: 2px;
   }
   &-s {
     right: 8px;
     bottom: 6px;
     padding: 2px 4px;
     font-size: 11px;
+    line-height: 14px;
+    border-radius: 2px;
   }
   .bg {
     position: absolute;
@@ -137,10 +141,29 @@
     -webkit-border-radius: 2px;
     border-radius: 2px;
     color: transparent;
+    line-height: 14px;
+    border-radius: 2px;
   }
   em {
     position: relative;
     z-index: 1;
+  }
+  &-today {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    .title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+      height: 30px;
+      padding: 0 10px;
+      font-size: 12px;
+      line-height: 30px;
+      color: #fff;
+    }
   }
 }
 .em {
