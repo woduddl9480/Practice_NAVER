@@ -353,14 +353,30 @@
             color: $gray-2;
             line-height: 20px;
           }
+          &-source {
+            line-height: 20px;
+            .name {
+              @extend .ellipsis;
+              color: $gray-2;
+              line-height: 20px;
+              &:after {
+                @extend .dot, .dot-gray--xs;
+                @extend .inline;
+                content: "";
+                margin: 0 5px 0 6px;
+                vertical-align: 3px;
+              }
+            }
+          }
           .date {
             color: $gray-3;
-            &:before {
-              @extend .dot, .dot-gray--xs;
-              @extend .inline;
-              content: "";
-              margin: 0 5px 0 6px;
-              vertical-align: 3px;
+          }
+          .percent {
+            color: $gray-3;
+            em {
+              margin-right: 5px;
+              margin-bottom: 0;
+              font-weight: 500 !important;
             }
           }
           &-thumb {

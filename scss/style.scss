@@ -658,12 +658,12 @@
           position: relative;
           .todaybtn {
             position: absolute;
-            top: 6px;
             cursor: pointer;
             z-index: 10;
             &-prev {
               @extend .ico-prev--m;
               @extend .inline;
+              top: 6px;
               left: -23px;
               &:hover {
                 @extend .sprMain;
@@ -675,6 +675,7 @@
             &-next {
               @extend .ico-next--m;
               @extend .inline;
+              top: 6px;
               right: -18px;
               &:hover {
                 @extend .sprMain;
@@ -857,10 +858,7 @@
                 padding: 18px 0;
               }
               &-btm {
-                >div{
-                  padding: 18px 0 17px;
-                }
-                padding-top: 24px;
+                position: relative;
                 &__strong {
                   line-height: 25px;
                   font-size: 14px;
@@ -869,10 +867,43 @@
                     @extend .inline;
                     @extend .sprMain;
                     width: 7px;
-	                  height: 11px;
+                    height: 11px;
                     background-position: -408px -146px;
                     margin-left: 6px;
                   }
+                }
+                .clickbtn {
+                  position: absolute;
+                  top: 108px;
+                  z-index: 10;
+                  cursor: pointer;
+                  &-prev {
+                    @extend .inline;
+                    @extend .ico-prev--m;
+                    left: -23px;
+                    &:hover {
+                      @extend .sprMain;
+                      width: 40px;
+                      height: 40px;
+                      background-position: -170px -342px;
+                    }
+                  }
+                  &-next {
+                    @extend .inline;
+                    @extend .ico-next--m;
+                    right: -23px;
+                    &:hover {
+                      @extend .sprMain;
+                      width: 40px;
+                      height: 40px;
+                      background-position: -44px -342px;
+                    }
+                  }
+                }
+                padding-top: 24px;
+                > div {
+                  padding: 18px 0 17px;
+                  position: relative;
                 }
               }
             }
@@ -1063,7 +1094,6 @@
             background-position: -109px -37px;
           }
         }
-
         .tab-wrap {
           .tabs {
             border-bottom: 0;
