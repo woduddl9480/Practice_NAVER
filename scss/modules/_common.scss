@@ -163,6 +163,36 @@
       font-size: 12px;
       line-height: 30px;
       color: #fff;
+      &-entertain {
+        background-color: $entertain;
+      }
+      &-sports {
+        background-color: $sports;
+      }
+      &-webtoon {
+        background-color: $webtoon;
+      }
+      &-fashion {
+        background-color: $fashion;
+      }
+      &-recipe {
+        background-color: $recipe;
+      }
+      &-living {
+        background-color: $living;
+      }
+      &-book {
+        background-color: $book;
+      }
+      &-economy {
+        background-color: $economy;
+      }
+      &-recommend {
+        background-color: $recommend;
+      }
+      &-car {
+        background-color: $car;
+      }
     }
   }
 }
