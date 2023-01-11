@@ -23,6 +23,11 @@
   background-size: 307px 289px;
   background-repeat: no-repeat;
 }
+.sprTrend {
+  background-image: url($imgPath + "sp_trend.png");
+  background-size: 129px 101px;
+  background-repeat: no-repeat;
+}
 /* 이미지 스프라이트 활용한 아이콘*/
 .ico-naver {
   @extend .sprMain-top;
@@ -435,7 +440,6 @@
   background-position: -188px -156px;
 }
 /*온도와 날씨 상태 끝*/
-
 .ico-newsstand {
   @extend .sprMain-top;
   width: 27px;
@@ -489,4 +493,10 @@
   width: 42px;
   height: 42px;
   background-position: 0 -342px;
+}
+.ico-trend--home {
+  @extend .sprTrend;
+  width: 15px;
+  height: 15px;
+  background-position: -109px -22px;
 }

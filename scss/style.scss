@@ -1304,6 +1304,57 @@
         }
       }
     }
+    .trend {
+      margin-top: 15px;
+      overflow: hidden;
+      width: 350px;
+      // height: 1809px;
+      // background-color: #fff;
+      letter-spacing: -0.25px;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      &-head {
+        padding: 12px 0 13px;
+        justify-content: space-between;
+        font-size: 13px;
+        line-height: 17px;
+        a {
+          strong:before {
+            @extend .ico-trend--home;
+            @extend .inline;
+            content: "";
+            margin-right: 4px;
+            vertical-align: -3px;
+          }
+          strong:after {
+            @extend .sprTrend;
+            @extend .inline;
+            content: "";
+            width: 5px;
+            height: 9px;
+            background-position: -109px -49px;
+            margin-left: 7px;
+          }
+        }
+        &__tab {
+          li {
+            margin-right: 10px;
+            &:last-child {
+              margin-right: 0;
+            }
+            button {
+              font-size: 13px;
+              line-height: 17px;
+              @extend .fw-700;
+              &.is_active {
+                color: $green-main;
+                border-bottom: 2px solid $green;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
