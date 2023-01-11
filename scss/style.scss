@@ -1356,7 +1356,7 @@
       }
       &-wrap {
         overflow: hidden;
-        height: 1763px;
+        min-height: 1763px;
         border: $border-gray;
         .name {
           padding: 12px 10px;
@@ -1389,6 +1389,11 @@
                 }
               }
             }
+          }
+        }
+        .product {
+          padding: 0 8px;
+          &-thumb {
           }
         }
       }
