@@ -1354,6 +1354,40 @@
           }
         }
       }
+      &-wrap {
+        overflow: hidden;
+        height: 1763px;
+        border: $border-gray;
+        .name {
+          padding: 12px 10px;
+          background-color: $bg-default;
+          border-bottom: $border-gray;
+          &-list {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li {
+              a {
+                line-height: 23px;
+                letter-spacing: -0.25px;
+                span {
+                  color: $gray-1;
+                }
+                .strong {
+                  color: inherit;
+                }
+              }
+              .dot {
+                margin: 0 11px;
+              }
+              &.nodot {
+                .dot {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
