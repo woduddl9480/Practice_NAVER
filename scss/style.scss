@@ -1375,9 +1375,13 @@
                 .strong {
                   color: inherit;
                 }
-              }
-              .dot {
-                margin: 0 11px;
+                &:after {
+                  content: "";
+                  @extend .inline;
+                  @extend .dot;
+                  @extend .dot-gray--s;
+                  margin: 0px 5px 3px;
+                }
               }
               &.nodot {
                 .dot {
@@ -1389,148 +1393,148 @@
         }
       }
     }
-  }
-}
 
-/*푸터*/
-.footer {
-  &-conts {
-    li {
-      display: block;
-      max-width: 600px;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-      color: #777;
-    }
-  }
-  &-txt {
-    color: #777;
-  }
-  background-color: #fafbfc;
-  border-top: $border-gray;
-  .wrap {
-    > div {
-      @extend .flex;
-    }
-    .ad {
-      padding: 24px 0;
-      border-bottom: $border-gray;
-      justify-content: space-between;
-      &-list {
-        max-width: 350px;
-        height: 86px;
-        border: none;
-        @extend .enlarge;
-        &__cont {
-          .thumb {
-            width: 160px;
+    /*푸터*/
+    .footer {
+      &-conts {
+        li {
+          display: block;
+          max-width: 600px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          color: #777;
+        }
+      }
+      &-txt {
+        color: #777;
+      }
+      background-color: #fafbfc;
+      border-top: $border-gray;
+      .wrap {
+        > div {
+          @extend .flex;
+        }
+        .ad {
+          padding: 24px 0;
+          border-bottom: $border-gray;
+          justify-content: space-between;
+          &-list {
+            max-width: 350px;
             height: 86px;
-            margin-right: 10px;
-            overflow: hidden;
-            img {
-              width: 100%;
-              object-fit: cover;
-            }
-          }
-          .txt {
-            .subtitle {
-              em {
-                color: $green-footer;
-                @extend .fw-700;
+            border: none;
+            @extend .enlarge;
+            &__cont {
+              .thumb {
+                width: 160px;
+                height: 86px;
+                margin-right: 10px;
+                overflow: hidden;
+                img {
+                  width: 100%;
+                  object-fit: cover;
+                }
+              }
+              .txt {
+                .subtitle {
+                  em {
+                    color: $green-footer;
+                    @extend .fw-700;
+                  }
+                }
+                .title {
+                  margin-top: 6px;
+                }
+                .detail {
+                  margin-top: 10px;
+                  p {
+                    line-height: 15px;
+                  }
+                }
               }
             }
-            .title {
-              margin-top: 6px;
-            }
-            .detail {
-              margin-top: 10px;
-              p {
-                line-height: 15px;
+            &__cont:hover {
+              @extend .no-underline;
+              img {
+                @extend .img-hover;
+              }
+              .txt {
+                strong {
+                  text-decoration: underline !important;
+                }
               }
             }
           }
         }
-        &__cont:hover {
-          @extend .no-underline;
-          img {
-            @extend .img-hover;
+        .notice {
+          padding: 16px 0 15px;
+          border-bottom: $border-gray;
+          justify-content: space-between;
+          &-left {
+            ul {
+              margin-left: 13px;
+            }
           }
-          .txt {
-            strong {
-              text-decoration: underline !important;
+          &-right {
+            .footer-title {
+              span:after {
+                content: "";
+                @extend .inline;
+                @extend .sprMain-top;
+                width: 7px;
+                height: 11px;
+                background-position: -408px -110px;
+                margin-left: 10px;
+                margin-top: 3px;
+              }
             }
           }
         }
-      }
-    }
-    .notice {
-      padding: 16px 0 15px;
-      border-bottom: $border-gray;
-      justify-content: space-between;
-      &-left {
-        ul {
-          margin-left: 13px;
-        }
-      }
-      &-right {
-        .footer-title {
-          span:after {
-            content: "";
-            @extend .inline;
-            @extend .sprMain-top;
-            width: 7px;
-            height: 11px;
-            background-position: -408px -110px;
-            margin-left: 10px;
-            margin-top: 3px;
+        .service {
+          width: 100%;
+          padding: 10px 0;
+          border-bottom: $border-gray;
+          &-left {
+            width: 70%;
+            &__box {
+              display: flex;
+              margin: 10px 0;
+              .footer-title {
+                width: 87px;
+              }
+              .footer-conts {
+                @extend .txt-bar;
+              }
+            }
+          }
+          &-right {
+            width: 30%;
+            margin: auto 0;
+            .link-box {
+              width: 50%;
+              &__txt {
+                padding-top: 3px;
+              }
+              &__img {
+                margin-left: 10px;
+                width: 48px;
+                height: 48px;
+                img {
+                  width: 100%;
+                }
+              }
+            }
           }
         }
-      }
-    }
-    .service {
-      width: 100%;
-      padding: 10px 0;
-      border-bottom: $border-gray;
-      &-left {
-        width: 70%;
-        &__box {
-          display: flex;
-          margin: 10px 0;
-          .footer-title {
-            width: 87px;
-          }
-          .footer-conts {
+        .info {
+          padding-top: 25px;
+          ul {
             @extend .txt-bar;
           }
-        }
-      }
-      &-right {
-        width: 30%;
-        margin: auto 0;
-        .link-box {
-          width: 50%;
-          &__txt {
-            padding-top: 3px;
-          }
-          &__img {
-            margin-left: 10px;
-            width: 48px;
-            height: 48px;
-            img {
-              width: 100%;
-            }
+          address {
+            margin-left: 15px;
           }
         }
-      }
-    }
-    .info {
-      padding-top: 25px;
-      ul {
-        @extend .txt-bar;
-      }
-      address {
-        margin-left: 15px;
       }
     }
   }
