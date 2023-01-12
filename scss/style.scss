@@ -1380,7 +1380,7 @@
                   @extend .inline;
                   @extend .dot;
                   @extend .dot-gray--s;
-                  margin: 0px 5px 3px;
+                  margin: 0 6px 3px 10px;
                 }
               }
               &.nodot {
@@ -1398,8 +1398,6 @@
         }
       }
     }
-
-    
   }
 }
 /*푸터*/
