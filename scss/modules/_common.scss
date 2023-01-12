@@ -355,6 +355,7 @@
           }
           &-source {
             line-height: 20px;
+            word-break: keep-all;
             .name {
               @extend .ellipsis;
               color: $gray-2;
