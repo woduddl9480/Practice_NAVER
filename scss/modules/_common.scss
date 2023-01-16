@@ -404,3 +404,47 @@
     }
   }
 }
+
+.product {
+  .paging {
+    padding: 10px 0;
+    &-num {
+      margin-right: 7px;
+    }
+    &-btn {
+      button {
+        width: 29px;
+        height: 29px;
+        border: $border-gray;
+        background-color: $white;
+        padding: 9px 10px 9px 10px;
+      }
+
+      &__prev {
+        i {
+          @extend .ico-trend--prev;
+          @extend .inline;
+        }
+        &:hover {
+          background-color: $bg-default;
+          i {
+            @extend .ico-trendP--hover;
+          }
+        }
+      }
+      &__next {
+        margin-left: -1px;
+        i {
+          @extend .ico-trend--next;
+          @extend .inline;
+        }
+        &:hover {
+          background-color: $bg-default;
+          i {
+            @extend .ico-trendN--hover;
+          }
+        }
+      }
+    }
+  }
+}

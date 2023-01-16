@@ -28,6 +28,12 @@
   background-size: 129px 101px;
   background-repeat: no-repeat;
 }
+.sprTrend-top {
+  background-image: url($imgPath + "sp_trend.png");
+  background-size: 129px 101px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
 /* 이미지 스프라이트 활용한 아이콘*/
 .ico-naver {
   @extend .sprMain-top;
@@ -499,4 +505,28 @@
   width: 15px;
   height: 15px;
   background-position: -109px -22px;
+}
+.ico-trend--prev {
+  @extend .sprTrend-top;
+  width: 5px;
+  height: 9px;
+  background-position: -116px -60px;
+}
+.ico-trend--next {
+  @extend .sprTrend-top;
+  width: 5px;
+  height: 9px;
+  background-position: -109px -60px;
+}
+.ico-trendP--hover {
+  @extend .sprTrend-top;
+  width: 5px;
+  height: 9px;
+  background-position: -116px -49px;
+}
+.ico-trendN--hover {
+  @extend .sprTrend-top;
+  width: 5px;
+  height: 9px;
+  background-position: -123px -49px;
 }
