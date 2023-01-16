@@ -1,4 +1,4 @@
-[
+var array = [
   {
     "girl": {
       "name": "손예진",
@@ -100,3 +100,6 @@
     }
   }
 ]
+array.forEach(function(data, idx){
+  console.log(data);
+});
