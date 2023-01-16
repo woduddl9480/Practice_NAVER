@@ -12,7 +12,7 @@ let swiper = new Swiper(".mySwiper", {
   autoHeight: true, // 현재 활성 슬라이드높이 맞게 높이조정
 });
 
-// var array = [
+// let array = [
 //   {
 //     "girl": {
 //       "name": "손예진",
