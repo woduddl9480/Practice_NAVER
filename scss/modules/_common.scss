@@ -410,6 +410,10 @@
     padding: 10px 0;
     &-num {
       margin-right: 7px;
+      color: $gray-3;
+      strong {
+        color: initial;
+      }
     }
     &-btn {
       button {
