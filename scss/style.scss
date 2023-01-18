@@ -1392,10 +1392,47 @@
           }
         }
         .product {
+          .title {
+            &-news {
+              margin-left: 5px;
+              font-size: 13px;
+            }
+          }
           padding: 0 8px;
           &-ad {
             padding-bottom: 20px;
             border-bottom: $border-gray;
+          }
+          &-news {
+            .paging {
+              justify-content: space-between;
+            }
+            &__list {
+              margin-top: 10px;
+              padding-bottom: 20px;
+              border-bottom: $border-gray;
+              ul {
+                li {
+                  line-height: 28px;
+                  a {
+                    strong {
+                      font-size: 13px;
+                      margin-right: 13px;
+                      &:before {
+                        content: "";
+                        @extend .inline;
+                        @extend .dot, .dot-green;
+                        margin: 0 8px 3px 5px;
+                      }
+                    }
+                    span {
+                      @extend .ellipsis;
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
