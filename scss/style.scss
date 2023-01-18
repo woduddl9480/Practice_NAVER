@@ -1400,8 +1400,6 @@
           }
           padding: 0 8px;
           &-ad {
-            padding-bottom: 20px;
-            border-bottom: $border-gray;
           }
           &-news {
             .paging {
@@ -1409,8 +1407,6 @@
             }
             &__list {
               margin-top: 10px;
-              padding-bottom: 20px;
-              border-bottom: $border-gray;
               ul {
                 li {
                   line-height: 28px;

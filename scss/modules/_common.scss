@@ -431,6 +431,13 @@
 }
 
 .product {
+  > div {
+    padding-bottom: 20px;
+    border-bottom: $border-gray;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
   .thumb {
     ul {
       flex-wrap: wrap;
