@@ -267,6 +267,9 @@
       margin-bottom: 0;
     }
   }
+  &-trend {
+    width: 107px;
+  }
   @extend .enlarge;
   a {
     .area {
@@ -313,21 +316,6 @@
         }
       }
       &-text {
-        &__m {
-          padding: 12px 0px 0 0;
-          .title {
-            @extend .ellipsis-2;
-            white-space: normal;
-          }
-        }
-        &__s {
-          padding: 4px 47px 0 0;
-          .info {
-            &-main {
-              max-width: 512px;
-            }
-          }
-        }
         display: block;
         padding: 16px 18px 0 0;
         .em {
@@ -389,6 +377,43 @@
             }
           }
         }
+        &__m {
+          padding: 12px 0px 0 0;
+          .title {
+            @extend .ellipsis-2;
+            white-space: normal;
+          }
+        }
+        &__s {
+          padding: 4px 47px 0 0;
+          .info {
+            &-main {
+              max-width: 512px;
+            }
+          }
+        }
+        &__trend {
+          padding: 0;
+          margin-top: 5px;
+          text-align: center;
+          .title {
+            font-size: 12px;
+            margin-bottom: 0;
+          }
+          .info {
+            margin-bottom: 0;
+            &-main {
+              font-size: 12px;
+              line-height: 16px;
+              margin-bottom: 0;
+            }
+            &:hover {
+              &-main {
+                @extend .no-underline;
+              }
+            }
+          }
+        }
       }
     }
     &:hover {
@@ -406,8 +431,24 @@
 }
 
 .product {
+  .thumb {
+    ul {
+      flex-wrap: wrap;
+      li {
+        margin: 10px 5px 0 0;
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+    }
+    .paging {
+      &-num {
+        margin: 0 15px;
+      }
+    }
+  }
   .paging {
-    padding: 15px 0;
+    padding: 18px 0 5px 0;
     &-num {
       margin-right: 7px;
       color: $gray-3;
