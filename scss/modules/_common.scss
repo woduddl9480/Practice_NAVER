@@ -408,7 +408,7 @@
               margin-bottom: 0;
             }
             &:hover {
-              &-main {
+              .info {
                 @extend .no-underline;
               }
             }
