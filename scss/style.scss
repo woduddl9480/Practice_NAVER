@@ -1430,6 +1430,17 @@
               }
             }
           }
+          &-plus {
+            .paging {
+              justify-content: space-between;
+              ul {
+                padding-left: 6px;
+              }
+              button {
+                font-weight: 500 !important;
+              }
+            }
+          }
         }
       }
     }
