@@ -447,6 +447,7 @@
           .title {
             @extend .ellipsis-2;
             white-space: normal;
+            letter-spacing: -0.5px;
           }
         }
         &__s {
