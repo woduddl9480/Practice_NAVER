@@ -273,10 +273,15 @@
   &-trend {
     width: 107px;
   }
+  &-plus {
+    width: 50%;
+  }
   @extend .enlarge;
   a {
     .area {
       &-thumb {
+        position: relative;
+        overflow: hidden;
         &__l {
           height: 180px;
         }
@@ -285,8 +290,65 @@
           height: 114px;
           margin-right: 21px;
         }
-        position: relative;
-        overflow: hidden;
+        &__deal {
+          display: flex;
+          position: relative;
+          width: 155px;
+          .img {
+            position: relative;
+            img {
+              border-radius: 4px;
+            }
+
+            &-main {
+              position: relative;
+              margin-right: 10px;
+              img {
+                width: 85px;
+                height: 60px;
+              }
+              i {
+                position: absolute;
+                top: 0;
+                left: 0;
+                &.ico-one {
+                  @extend .ico-one;
+                  @extend .inline;
+                }
+                &.ico-alpha {
+                  @extend .ico-alpha;
+                  @extend .inline;
+                }
+              }
+            }
+            &-sub {
+              img {
+                width: 60px;
+                height: 60px;
+                aspect-ratio: auto 60 / 60;
+              }
+            }
+            &-bd {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              opacity: 0.05;
+              filter: alpha(opacity=5);
+              border: 1px solid #000;
+              border-radius: 4px;
+            }
+          }
+          .ico-addplus {
+            position: absolute;
+            top: 20px;
+            left: 80px;
+            @extend .ico-dealplus;
+            @extend .inline;
+            z-index: 1;
+          }
+        }
         img {
           width: 100%;
           object-fit: cover;
@@ -414,6 +476,27 @@
               .info {
                 @extend .no-underline;
               }
+            }
+          }
+        }
+        &__deal {
+          padding: 0;
+          margin-left: 10px;
+          max-width: 167px;
+          .title {
+            @extend .ellipsis-2;
+            white-space: inherit;
+            font-size: 12px;
+            font-weight: 500 !important;
+            line-height: 17px;
+          }
+          .price {
+            em {
+              color: #f04045;
+              font-weight: 700;
+            }
+            span {
+              font-weight: 700;
             }
           }
         }

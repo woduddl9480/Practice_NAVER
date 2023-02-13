@@ -11,6 +11,7 @@
     height: 160px;
     padding-top: 10px;
     .main {
+      position: relative;
       align-items: initial;
       padding: 19px 0 20px;
       .logo {
@@ -63,6 +64,16 @@
         }
         &-btn {
           position: absolute;
+        }
+      }
+      .temp-ad {
+        width: 225px;
+        height: 56px;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        img {
+          width: 100%;
         }
       }
     }
@@ -1319,14 +1330,14 @@
         font-size: 13px;
         line-height: 17px;
         a {
-          strong:before {
+          strong::before {
             @extend .ico-trend--home;
             @extend .inline;
             content: "";
             margin-right: 4px;
             vertical-align: -3px;
           }
-          strong:after {
+          strong::after {
             @extend .sprTrend;
             @extend .inline;
             content: "";
@@ -1356,7 +1367,7 @@
       }
       &-wrap {
         overflow: hidden;
-        min-height: 1763px;
+        min-height: auto;
         border: $border-gray;
         .name {
           padding: 12px 10px;
@@ -1438,6 +1449,53 @@
               }
               button {
                 font-weight: 500 !important;
+              }
+            }
+            &__list {
+              margin-top: 10px;
+              li:first-child {
+                margin-right: 5px;
+              }
+              .area-text {
+                margin-top: 10px;
+              }
+            }
+          }
+          &-deal {
+            padding-bottom: 0 !important;
+            .paging {
+              justify-content: space-between;
+              .title {
+                h3 {
+                  font-size: 13px;
+                  font-weight: 500 !important;
+                  &::before {
+                    @extend .ico-deal;
+                    @extend .inline;
+                    content: "";
+                    margin-top: -3px;
+                    margin-right: 5px;
+                  }
+                }
+              }
+            }
+            &__list {
+              margin-top: 15px;
+              .imgbox {
+                transition: none;
+                width: 100%;
+                margin-bottom: 10px;
+                a {
+                  display: flex;
+                  @extend .inline;
+                  width: inherit;
+                }
+                &:hover {
+                  .img-hover {
+                    transform: none;
+                    transition-duration: unset;
+                  }
+                }
               }
             }
           }
